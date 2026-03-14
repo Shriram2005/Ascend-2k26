@@ -12,6 +12,7 @@ import { DomainsSection } from "@/components/DomainsSection";
 import { BountySection } from "@/components/BountySection";
 import { TimelineSection } from "@/components/TimelineSection";
 import { SponsorsSection } from "@/components/SponsorsSection";
+import { CommitteeSection } from "@/components/CommitteeSection";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { CyberBackground } from "@/components/CyberBackground";
@@ -59,6 +60,7 @@ export default function Home() {
           <BountySection />
           <TimelineSection />
           <SponsorsSection />
+          <CommitteeSection />
           <FAQSection />
           <Footer />
 

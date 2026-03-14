@@ -42,7 +42,7 @@ export const Navbar = () => {
             </motion.div>
             <div className="flex flex-col">
               <span className="font-black text-lg md:text-xl tracking-tighter leading-none">
-                ASCEND<span className="text-purple-400">2K24</span>
+                ASCEND<span className="text-purple-400">2K26</span>
               </span>
               <span className="text-[0.5rem] md:text-[0.55rem] text-gray-500 tracking-[0.3em] md:tracking-[0.4em] font-mono font-bold">
                 DEPT_OF_MCA

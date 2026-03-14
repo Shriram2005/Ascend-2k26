@@ -74,7 +74,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative z-10 min-h-screen flex flex-col items-center justify-center pt-24 md:pt-32 px-3 md:px-4 group overflow-hidden select-none">
+    <section className="relative z-10 min-h-screen flex flex-col items-center justify-center pt-24 md:pt-32 px-3 md:px-4 group select-none">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(168,85,247,0.06),transparent_60%)]" />
 
       <motion.div
@@ -106,7 +106,7 @@ export const HeroSection = () => {
           <motion.h1
             variants={glitchVariant}
             animate="animate"
-            className="text-6xl sm:text-8xl md:text-[14rem] font-black leading-[0.8] tracking-tighter relative z-10 uppercase scale-y-110 italic"
+            className="text-6xl sm:text-8xl md:text-[12rem] lg:text-[14rem] font-black leading-[0.8] tracking-tighter relative z-10 uppercase scale-y-110 italic px-4"
           >
             <span className="block text-transparent bg-clip-text bg-gradient-to-br from-purple-500 via-white to-cyan-400 drop-shadow-[0_0_40px_rgba(168,85,247,0.4)]">
               ASCEND
