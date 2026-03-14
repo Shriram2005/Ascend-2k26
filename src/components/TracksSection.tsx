@@ -87,7 +87,7 @@ export const TracksSection = () => (
         </h2>
         <div className="flex items-center justify-center gap-4 text-purple-500 font-mono text-[10px] tracking-[0.5em] font-black uppercase">
           <div className="w-12 h-px bg-purple-500/30" />
-          ASCEND_2K24_COMPETITIONS
+          ASCEND_2K26_COMPETITIONS
           <div className="w-12 h-px bg-purple-500/30" />
         </div>
       </motion.div>

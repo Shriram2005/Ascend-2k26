@@ -105,7 +105,7 @@ export const Footer = () => (
           </div>
           <div className="flex flex-col">
             <span className="font-black text-2xl tracking-tighter uppercase leading-none">
-              ASCEND <span className="text-purple-400">2K24</span>
+              ASCEND <span className="text-purple-400">2K26</span>
             </span>
             <span className="text-xs font-mono text-gray-400 font-bold uppercase tracking-widest">
               It&apos;s Time to Rise
@@ -113,7 +113,7 @@ export const Footer = () => (
           </div>
         </div>
         <p className="text-gray-400 text-[10px] sm:text-xs font-mono tracking-[0.3em] sm:tracking-[0.5em] font-black uppercase text-center">
-          © 2024 ASCEND 2K24 // DEPT. OF MCA, KKWIEER NASHIK
+          © 2026 ASCEND 2K26 // DEPT. OF MCA, KKWIEER NASHIK
         </p>
       </div>
     </div>

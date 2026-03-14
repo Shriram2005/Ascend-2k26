@@ -6,7 +6,7 @@ import { HelpCircle } from "lucide-react";
 const faqs = [
   {
     q: "Is there a registration fee?",
-    a: "No! ASCEND 2K24 is completely free for all participants. Just register and show up!",
+    a: "No! ASCEND 2K26 is completely free for all participants. Just register and show up!",
   },
   {
     q: "What is the team size?",
@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "Can I participate in multiple events?",
-    a: "Yes! You can register for multiple events as long as the timings don't clash. Check the schedule for details.",
+    a: "Yes! You can register for multiple events as long as the timings don't clash. Check the schedule — all events are on 28th March 2026.",
   },
   {
     q: "What should I bring?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Is it open for all colleges?",
-    a: "Yes! ASCEND 2K24 is a National-Level event open to students from all colleges and universities.",
+    a: "Yes! ASCEND 2K26 is a National-Level event open to students from all colleges and universities.",
   },
   {
     q: "Where is the venue?",
@@ -38,7 +38,7 @@ export const FAQSection = () => (
           FAQs
         </h2>
         <p className="text-purple-500 font-mono text-[10px] tracking-[0.5em] uppercase font-black">
-          ASCEND_2K24_QUERIES
+          ASCEND_2K26_QUERIES
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-8">

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const stats = [
   { label: "TOTAL_EVENTS", value: "4", color: "text-purple-400" },
-  { label: "DURATION", value: "2 Days", color: "text-cyan-400" },
+  { label: "DURATION", value: "1 Day", color: "text-cyan-400" },
   { label: "PARTICIPANTS", value: "200+", color: "text-green-500" },
   { label: "ENTRY_FEE", value: "FREE", color: "text-yellow-400" },
 ];

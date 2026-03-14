@@ -27,7 +27,7 @@ const CountdownTimer = memo(() => {
   const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const target = new Date("February 28, 2024 09:00:00").getTime();
+    const target = new Date("March 28, 2026 09:00:00").getTime();
     const interval = setInterval(() => {
       const diff = target - new Date().getTime();
       if (diff < 0) {
@@ -111,14 +111,14 @@ export const HeroSection = () => {
             <span className="block text-transparent bg-clip-text bg-gradient-to-br from-purple-500 via-white to-cyan-400 drop-shadow-[0_0_40px_rgba(168,85,247,0.4)]">
               ASCEND
               <br />
-              <span className="text-4xl sm:text-6xl md:text-[8rem]">2K24</span>
+              <span className="text-4xl sm:text-6xl md:text-[8rem]">2K26</span>
             </span>
           </motion.h1>
           <div
             className="absolute inset-0 text-white/5 blur-3xl -z-10 animate-pulse select-none"
             aria-hidden="true"
           >
-            ASCEND 2K24
+            ASCEND 2K26
           </div>
         </motion.div>
 
@@ -134,7 +134,7 @@ export const HeroSection = () => {
         <motion.div variants={slideUp} className="flex flex-col items-center gap-4 mb-12">
           <div className="flex items-center gap-4 text-gray-400 font-mono text-xs md:text-sm tracking-[0.2em] font-bold">
             <Calendar size={16} className="text-purple-500" />
-            <span>28 FEB – 01 MAR, 2024</span>
+            <span>28 MARCH, 2026</span>
             <div className="w-1.5 h-1.5 rounded-full bg-slate-800" />
             <span>NASHIK_HQ</span>
           </div>
@@ -208,7 +208,7 @@ export const HeroSection = () => {
       >
         <div className="flex flex-col gap-2 font-mono text-[8px] text-cyan-700 uppercase font-black tracking-widest">
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-cyan-700" /> EVENT: ASCEND_2K24
+            <div className="w-1 h-1 bg-cyan-700" /> EVENT: ASCEND_2K26
           </div>
           <div className="flex items-center gap-2">
             <div className="w-1 h-1 bg-cyan-700" /> STATUS: LIVE

@@ -62,7 +62,7 @@ export const AboutSection = () => (
             </span>
           </h2>
           <p className="text-gray-400 leading-relaxed text-lg sm:text-2xl mb-10 font-bold tracking-tight">
-            <span className="text-purple-400">ASCEND 2K24</span> is a National-Level
+            <span className="text-purple-400">ASCEND 2K26</span> is a National-Level
             Technical Event organized by the Department of MCA at K. K. Wagh Institute
             of Engineering Education &amp; Research, Nashik. Compete in exciting
             events like Poster Competition, Blind Coding, Mini Hackathon, and
@@ -86,7 +86,7 @@ export const AboutSection = () => (
           className="grid sm:grid-cols-2 gap-6"
         >
           <StatCard icon={<Sparkles />} title="4 EVENTS" desc="TECH & FUN" accent={PURPLE} />
-          <StatCard icon={<Calendar />} title="2 DAYS" desc="28 FEB – 01 MAR" accent={GREEN} />
+          <StatCard icon={<Calendar />} title="1 DAY" desc="28 MARCH 2026" accent={GREEN} />
           <StatCard icon={<Users />} title="200+" desc="PARTICIPANTS" accent={CYAN} />
           <StatCard icon={<MapPin />} title="NASHIK" desc="KKWIEER CAMPUS" accent="#FFF" />
         </motion.div>

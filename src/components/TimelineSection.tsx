@@ -14,17 +14,14 @@ import {
 } from "lucide-react";
 
 const timelineEvents = [
-  { id: 1, event: "Registration & Check-in", timestamp: new Date("2024-02-28T08:00:00"), date: "FEB 28, 2024", day: "DAY 1", time: "08:00 – 09:00 AM", desc: "ARRIVAL & REGISTRATION", icon: <DoorOpen /> },
-  { id: 2, event: "Opening Ceremony", timestamp: new Date("2024-02-28T09:00:00"), date: "FEB 28, 2024", day: "DAY 1", time: "09:00 – 10:00 AM", desc: "INAUGURATION & WELCOME", icon: <Mic /> },
-  { id: 3, event: "Poster Competition", timestamp: new Date("2024-02-28T10:00:00"), date: "FEB 28, 2024", day: "DAY 1", time: "10:00 AM – 12:30 PM", desc: "CREATIVE SHOWCASE", icon: <Image /> },
-  { id: 4, event: "Lunch Break", timestamp: new Date("2024-02-28T12:30:00"), date: "FEB 28, 2024", day: "DAY 1", time: "12:30 – 01:30 PM", desc: "RECHARGE & REFUEL", icon: <Coffee /> },
-  { id: 5, event: "Blind Coding Competition", timestamp: new Date("2024-02-28T13:30:00"), date: "FEB 28, 2024", day: "DAY 1", time: "01:30 – 04:00 PM", desc: "CODE WITHOUT SIGHT", icon: <Code2 /> },
-  { id: 6, event: "PUBG Tournament – Round 1", timestamp: new Date("2024-02-28T16:00:00"), date: "FEB 28, 2024", day: "DAY 1", time: "04:00 – 06:00 PM", desc: "BATTLE BEGINS", icon: <Gamepad2 /> },
-  { id: 7, event: "Mini Hackathon Kickoff", timestamp: new Date("2024-03-01T09:00:00"), date: "MAR 01, 2024", day: "DAY 2", time: "09:00 – 09:30 AM", desc: "PROBLEM STATEMENT REVEAL", icon: <Cpu /> },
-  { id: 8, event: "Mini Hackathon – Build Phase", timestamp: new Date("2024-03-01T09:30:00"), date: "MAR 01, 2024", day: "DAY 2", time: "09:30 AM – 01:00 PM", desc: "BUILD YOUR SOLUTION", icon: <Cpu /> },
-  { id: 9, event: "PUBG Tournament – Finals", timestamp: new Date("2024-03-01T14:00:00"), date: "MAR 01, 2024", day: "DAY 2", time: "02:00 – 04:00 PM", desc: "FINAL SHOWDOWN", icon: <Gamepad2 /> },
-  { id: 10, event: "Hackathon Presentations", timestamp: new Date("2024-03-01T14:00:00"), date: "MAR 01, 2024", day: "DAY 2", time: "02:00 – 04:00 PM", desc: "DEMO YOUR PROJECT", icon: <Cpu /> },
-  { id: 11, event: "Prize Distribution & Closing", timestamp: new Date("2024-03-01T16:00:00"), date: "MAR 01, 2024", day: "DAY 2", time: "04:00 PM onwards", desc: "VICTORY CEREMONY", icon: <Award /> },
+  { id: 1, event: "Registration & Check-in", timestamp: new Date("2026-03-28T08:00:00"), date: "MAR 28, 2026", time: "08:00 – 09:00 AM", desc: "ARRIVAL & REGISTRATION", icon: <DoorOpen /> },
+  { id: 2, event: "Opening Ceremony", timestamp: new Date("2026-03-28T09:00:00"), date: "MAR 28, 2026", time: "09:00 – 09:30 AM", desc: "INAUGURATION & WELCOME", icon: <Mic /> },
+  { id: 3, event: "Poster Competition", timestamp: new Date("2026-03-28T09:30:00"), date: "MAR 28, 2026", time: "09:30 – 11:00 AM", desc: "CREATIVE SHOWCASE", icon: <Image /> },
+  { id: 4, event: "Blind Coding Competition", timestamp: new Date("2026-03-28T11:00:00"), date: "MAR 28, 2026", time: "11:00 AM – 12:30 PM", desc: "CODE WITHOUT SIGHT", icon: <Code2 /> },
+  { id: 5, event: "Lunch Break", timestamp: new Date("2026-03-28T12:30:00"), date: "MAR 28, 2026", time: "12:30 – 01:30 PM", desc: "RECHARGE & REFUEL", icon: <Coffee /> },
+  { id: 6, event: "Mini Hackathon", timestamp: new Date("2026-03-28T13:30:00"), date: "MAR 28, 2026", time: "01:30 – 04:00 PM", desc: "BUILD YOUR SOLUTION", icon: <Cpu /> },
+  { id: 7, event: "PUBG Tournament", timestamp: new Date("2026-03-28T14:00:00"), date: "MAR 28, 2026", time: "02:00 – 04:30 PM", desc: "BATTLE ROYALE SHOWDOWN", icon: <Gamepad2 /> },
+  { id: 8, event: "Prize Distribution & Closing", timestamp: new Date("2026-03-28T16:30:00"), date: "MAR 28, 2026", time: "04:30 PM onwards", desc: "VICTORY CEREMONY", icon: <Award /> },
 ];
 
 export const TimelineSection = () => {
@@ -64,7 +61,7 @@ export const TimelineSection = () => {
         {/* Header */}
         <div className="mb-16 md:mb-32 flex flex-col items-center">
           <p className="text-purple-500 font-mono text-[10px] tracking-[0.5em] sm:tracking-[1em] mb-4 uppercase font-black italic">
-            {"// EVENT_SCHEDULE"}
+            {"// EVENT_SCHEDULE — 28 MARCH 2026"}
           </p>
           <h2 className="text-4xl sm:text-6xl md:text-9xl font-black text-center uppercase tracking-tighter italic leading-none">
             The Schedule
@@ -114,7 +111,7 @@ export const TimelineSection = () => {
                     visible: {
                       opacity: 1,
                       x: 0,
-                      transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] },
+                      transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] },
                     },
                   }}
                   className={`relative flex items-center gap-4 sm:gap-12 ${
@@ -162,7 +159,7 @@ export const TimelineSection = () => {
                               isPast ? "text-gray-600" : "text-purple-500"
                             }`}
                           >
-                            {evt.day} • {evt.date} • {evt.time}
+                            {evt.date} • {evt.time}
                           </span>
                           <h3
                             className={`text-xl sm:text-3xl font-black uppercase tracking-tighter italic ${

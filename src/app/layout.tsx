@@ -14,24 +14,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ASCEND 2K24 | MCA Department | KKWIEER, Nashik",
+  title: "ASCEND 2K26 | MCA Department | KKWIEER, Nashik",
   description:
-    "ASCEND 2K24 — It's Time to Rise! A National-Level technical event by Department of MCA, K. K. Wagh Institute of Engineering Education and Research, Nashik. Poster Competition, Blind Coding, Mini Hackathon, PUBG Tournament & more!",
-  authors: [{ name: "ASCEND 2K24 Team - MCA Department" }],
+    "ASCEND 2K26 — It's Time to Rise! A National-Level technical event on 28th March 2026 by Department of MCA, K. K. Wagh Institute of Engineering Education and Research, Nashik. Poster Competition, Blind Coding, Mini Hackathon, PUBG Tournament & more!",
+  authors: [{ name: "ASCEND 2K26 Team - MCA Department" }],
   keywords:
-    "ASCEND 2K24,hackathon,coding,Nashik,KKWIEER,K K Wagh,MCA,poster competition,blind coding,PUBG tournament,mini hackathon",
+    "ASCEND 2K26,hackathon,coding,Nashik,KKWIEER,K K Wagh,MCA,poster competition,blind coding,PUBG tournament,mini hackathon,2026",
   openGraph: {
-    title: "ASCEND 2K24 | It's Time to Rise",
+    title: "ASCEND 2K26 | It's Time to Rise",
     description:
-      "National-Level Technical Event by Dept. of MCA, K. K. Wagh Institute, Nashik. Exciting competitions & prizes!",
-    siteName: "ASCEND 2K24",
+      "National-Level Technical Event on 28th March 2026 by Dept. of MCA, K. K. Wagh Institute, Nashik. Exciting competitions & prizes!",
+    siteName: "ASCEND 2K26",
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ASCEND 2K24 | It's Time to Rise",
-    description: "Technical event at KKWIEER, Nashik. Register now!",
+    title: "ASCEND 2K26 | It's Time to Rise",
+    description: "Technical event on 28th March 2026 at KKWIEER, Nashik. Register now!",
   },
   icons: {
     icon: "/logo-new.png",

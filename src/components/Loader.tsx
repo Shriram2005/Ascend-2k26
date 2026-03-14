@@ -22,7 +22,7 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
       "LOADING EVENT MODULES...",
       "PREPARING COMPETITIONS...",
       "CONNECTING TO KKWIEER...",
-      "CONFIGURING ASCEND 2K24...",
+      "CONFIGURING ASCEND 2K26...",
       "READY TO RISE.",
     ];
     let idx = 0;
@@ -53,7 +53,7 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
         className="w-64 md:w-96 relative"
       >
         <div className="flex justify-between text-[10px] text-purple-500 mb-2 font-bold tracking-tighter">
-          <span>ASCEND_2K24_LOADER</span>
+          <span>ASCEND_2K26_LOADER</span>
           <span>{Math.round(progress)}%</span>
         </div>
         <div className="h-[2px] w-full bg-gray-900 rounded-full overflow-hidden">
