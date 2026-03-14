@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     description: "Technical event on 28th March 2026 at KKWIEER, Nashik. Register now!",
   },
   icons: {
-    icon: "/logo-new.png",
-    shortcut: "/logo-new.png",
-    apple: "/logo-new.png",
+    icon: "/clg_logo_white.png",
+    shortcut: "/clg_logo_white.png",
+    apple: "/clg_logo_white.png",
   },
 };
 

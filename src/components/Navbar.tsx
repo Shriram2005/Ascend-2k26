@@ -31,7 +31,7 @@ export const Navbar = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-500 via-cyan-400 to-blue-500 rounded-lg opacity-30 blur-md group-hover:opacity-60 transition-opacity" />
               <div className="relative w-full h-full border border-white/20 bg-black/60 rounded-lg flex items-center justify-center backdrop-blur-sm overflow-hidden p-1">
                 <Image
-                  src="/logo-new.png"
+                  src="/clg_logo_white.png"
                   alt="ASCEND Logo"
                   width={32}
                   height={32}
