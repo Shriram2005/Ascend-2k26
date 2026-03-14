@@ -81,7 +81,7 @@ export const HeroSection = () => {
         initial="hidden"
         animate="visible"
         variants={staggerContainer}
-        className="text-center relative z-20 max-w-7xl mx-auto"
+        className="text-center relative z-20 max-w-7xl lg:max-w-none mx-auto"
       >
         {/* Badge */}
         <motion.div
@@ -106,7 +106,7 @@ export const HeroSection = () => {
           <motion.h1
             variants={glitchVariant}
             animate="animate"
-            className="text-6xl sm:text-8xl md:text-[12rem] lg:text-[14rem] font-black leading-[0.8] tracking-tighter relative z-10 uppercase scale-y-110 italic px-4"
+            className="text-6xl sm:text-8xl md:text-[12rem] lg:text-[12vw] font-black leading-[0.8] tracking-tighter relative z-10 uppercase scale-y-110 italic px-4"
           >
             <span className="block text-transparent bg-clip-text bg-gradient-to-br from-purple-500 via-white to-cyan-400 drop-shadow-[0_0_40px_rgba(168,85,247,0.4)]">
               ASCEND
