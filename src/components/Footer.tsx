@@ -108,7 +108,7 @@ export const Footer = () => (
               ASCEND <span className="text-purple-400">2K26</span>
             </span>
             <span className="text-xs font-mono text-gray-400 font-bold uppercase tracking-widest">
-              It&apos;s Time to Rise
+              A Technical Symposium
             </span>
           </div>
         </div>

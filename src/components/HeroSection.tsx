@@ -127,7 +127,7 @@ export const HeroSection = () => {
           variants={slideUp}
           className="text-xl sm:text-2xl md:text-5xl font-black text-cyan-400 tracking-tighter mb-8 uppercase opacity-90 leading-none italic"
         >
-          <span className="text-white">It&apos;s Time</span> to Rise
+          <span className="text-white">A Technical</span> Symposium
         </motion.h2>
 
         {/* Event Info */}

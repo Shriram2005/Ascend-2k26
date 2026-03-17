@@ -49,7 +49,7 @@ const event: EventData = {
     "Any plagiarism or copied work can lead to disqualification.",
     "Organizers' and judges' decisions are final and binding.",
   ],
-  registrationLink: "https://forms.gle/minihackathon-dummy",
+  registrationLink: "https://forms.gle/vsoBRnjPcU4jz7ak7",
 };
 
 export default function MiniHackathonPage() {

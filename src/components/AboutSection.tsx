@@ -56,9 +56,9 @@ export const AboutSection = () => (
             ./ABOUT_ASCEND
           </div>
           <h2 className="text-4xl sm:text-6xl md:text-[5.5rem] font-black mb-10 tracking-tighter uppercase leading-[0.85]">
-            It&apos;s Time{" "}
+            A Technical{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-white to-cyan-400 shadow-glow">
-              to Rise
+              Symposium
             </span>
           </h2>
           <p className="text-gray-400 leading-relaxed text-lg sm:text-2xl mb-10 font-bold tracking-tight">

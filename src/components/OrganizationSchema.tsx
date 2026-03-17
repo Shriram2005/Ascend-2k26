@@ -8,7 +8,7 @@ export const getOrganizationSchema = () => {
     "@context": "https://schema.org",
     "@type": "Event",
     "@id": "https://ascend2k26.in",
-    name: "ASCEND 2K26 — It's Time to Rise",
+    name: "ASCEND 2K26 — A Technical Symposium",
     description:
       "ASCEND 2K26 is a national-level technical symposium organized by the Department of MCA at K. K. Wagh Institute of Engineering Education and Research (KKWIEER), Nashik.",
     image: "https://ascend2k26.in/ascend_logo.jpeg",
