@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Image, Code2, Cpu, Gamepad2 } from "lucide-react";
+import { Cpu, Gamepad2, Code2, Trophy } from "lucide-react";
 
 export const BountySection = () => (
   <section id="bounty" className="py-20 md:py-40 relative z-10 bg-black overflow-hidden">
@@ -25,76 +25,8 @@ export const BountySection = () => (
         </div>
       </div>
 
-      {/* Prize Cards by Event */}
+      {/* Prize Cards by Event — ordered: Mini Hackathon, BGMI, Blind Coding, Bowled-Out */}
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-20">
-        {/* Poster Competition */}
-        <motion.div
-          whileHover={{ scale: 1.01 }}
-          className="p-6 sm:p-8 md:p-10 border-2 border-purple-500/20 bg-purple-500/5 rounded-sm relative group overflow-hidden"
-        >
-          <div className="absolute top-0 right-0 p-4 opacity-10 font-mono text-[8rem] font-black select-none group-hover:opacity-20 transition-opacity italic">
-            01
-          </div>
-          <h3 className="text-xl sm:text-3xl font-black mb-6 md:mb-8 flex items-center gap-3 sm:gap-5 italic">
-            <Image size={32} className="text-purple-500" />
-            POSTER COMPETITION
-          </h3>
-          <div className="space-y-6">
-            {[
-              { label: "1ST PLACE", prize: "Winner", color: "text-purple-400" },
-              { label: "2ND PLACE", prize: "Runner Up", color: "text-white" },
-              { label: "3RD PLACE", prize: "2nd Runner Up", color: "text-white" },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="flex justify-between items-center p-4 sm:p-5 border border-white/10 bg-black group-hover:border-purple-500/30 transition-colors"
-              >
-                <span className="font-mono text-[10px] sm:text-xs text-gray-400 tracking-[0.15em] sm:tracking-[0.3em] font-black">
-                  {item.label}
-                </span>
-                <span
-                  className={`text-lg sm:text-xl md:text-2xl font-black ${item.color} font-mono tracking-tighter`}
-                >
-                  {item.prize}
-                </span>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Blind Coding */}
-        <motion.div
-          whileHover={{ scale: 1.01 }}
-          className="p-6 sm:p-8 md:p-10 border-2 border-cyan-500/20 bg-cyan-500/5 rounded-sm relative group overflow-hidden"
-        >
-          <div className="absolute top-0 right-0 p-4 opacity-10 font-mono text-[8rem] font-black select-none group-hover:opacity-20 transition-opacity italic">
-            02
-          </div>
-          <h3 className="text-xl sm:text-3xl font-black mb-6 md:mb-8 flex items-center gap-3 sm:gap-5 italic">
-            <Code2 size={32} className="text-cyan-500" />
-            BLIND CODING
-          </h3>
-          <div className="space-y-6">
-            {[
-              { label: "1ST PLACE", prize: "Winner", color: "text-cyan-400" },
-              { label: "2ND PLACE", prize: "Runner Up", color: "text-white" },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="flex justify-between items-center p-4 sm:p-5 border border-white/10 bg-black group-hover:border-cyan-500/30 transition-colors"
-              >
-                <span className="font-mono text-[10px] sm:text-xs text-gray-400 tracking-[0.15em] sm:tracking-[0.3em] font-black">
-                  {item.label}
-                </span>
-                <span
-                  className={`text-lg sm:text-xl md:text-2xl font-black ${item.color} font-mono tracking-tighter`}
-                >
-                  {item.prize}
-                </span>
-              </div>
-            ))}
-          </div>
-        </motion.div>
 
         {/* Mini Hackathon */}
         <motion.div
@@ -102,7 +34,7 @@ export const BountySection = () => (
           className="p-6 sm:p-8 md:p-10 border-2 border-green-500/20 bg-green-500/5 rounded-sm relative group overflow-hidden"
         >
           <div className="absolute top-0 right-0 p-4 opacity-10 font-mono text-[8rem] font-black select-none group-hover:opacity-20 transition-opacity italic">
-            03
+            01
           </div>
           <h3 className="text-xl sm:text-3xl font-black mb-6 md:mb-8 flex items-center gap-3 sm:gap-5 italic">
             <Cpu size={32} className="text-green-500" />
@@ -121,9 +53,7 @@ export const BountySection = () => (
                 <span className="font-mono text-[10px] sm:text-xs text-gray-400 tracking-[0.15em] sm:tracking-[0.3em] font-black">
                   {item.label}
                 </span>
-                <span
-                  className={`text-lg sm:text-xl md:text-2xl font-black ${item.color} font-mono tracking-tighter`}
-                >
+                <span className={`text-lg sm:text-xl md:text-2xl font-black ${item.color} font-mono tracking-tighter`}>
                   {item.prize}
                 </span>
               </div>
@@ -131,17 +61,17 @@ export const BountySection = () => (
           </div>
         </motion.div>
 
-        {/* PUBG Tournament */}
+        {/* BGMI Tournament */}
         <motion.div
           whileHover={{ scale: 1.01 }}
           className="p-6 sm:p-8 md:p-10 border-2 border-orange-500/20 bg-orange-500/5 rounded-sm relative group overflow-hidden"
         >
           <div className="absolute top-0 right-0 p-4 opacity-10 font-mono text-[8rem] font-black select-none group-hover:opacity-20 transition-opacity italic">
-            04
+            02
           </div>
           <h3 className="text-xl sm:text-3xl font-black mb-6 md:mb-8 flex items-center gap-3 sm:gap-5 italic">
             <Gamepad2 size={32} className="text-orange-500" />
-            PUBG TOURNAMENT
+            BGMI TOURNAMENT
           </h3>
           <div className="space-y-6">
             {[
@@ -155,9 +85,71 @@ export const BountySection = () => (
                 <span className="font-mono text-[10px] sm:text-xs text-gray-400 tracking-[0.15em] sm:tracking-[0.3em] font-black">
                   {item.label}
                 </span>
-                <span
-                  className={`text-lg sm:text-xl md:text-2xl font-black ${item.color} font-mono tracking-tighter`}
-                >
+                <span className={`text-lg sm:text-xl md:text-2xl font-black ${item.color} font-mono tracking-tighter`}>
+                  {item.prize}
+                </span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Blind Coding */}
+        <motion.div
+          whileHover={{ scale: 1.01 }}
+          className="p-6 sm:p-8 md:p-10 border-2 border-cyan-500/20 bg-cyan-500/5 rounded-sm relative group overflow-hidden"
+        >
+          <div className="absolute top-0 right-0 p-4 opacity-10 font-mono text-[8rem] font-black select-none group-hover:opacity-20 transition-opacity italic">
+            03
+          </div>
+          <h3 className="text-xl sm:text-3xl font-black mb-6 md:mb-8 flex items-center gap-3 sm:gap-5 italic">
+            <Code2 size={32} className="text-cyan-500" />
+            BLIND CODING
+          </h3>
+          <div className="space-y-6">
+            {[
+              { label: "1ST PLACE", prize: "Winner", color: "text-cyan-400" },
+              { label: "2ND PLACE", prize: "Runner Up", color: "text-white" },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="flex justify-between items-center p-4 sm:p-5 border border-white/10 bg-black group-hover:border-cyan-500/30 transition-colors"
+              >
+                <span className="font-mono text-[10px] sm:text-xs text-gray-400 tracking-[0.15em] sm:tracking-[0.3em] font-black">
+                  {item.label}
+                </span>
+                <span className={`text-lg sm:text-xl md:text-2xl font-black ${item.color} font-mono tracking-tighter`}>
+                  {item.prize}
+                </span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Bowled-Out */}
+        <motion.div
+          whileHover={{ scale: 1.01 }}
+          className="p-6 sm:p-8 md:p-10 border-2 border-yellow-500/20 bg-yellow-500/5 rounded-sm relative group overflow-hidden"
+        >
+          <div className="absolute top-0 right-0 p-4 opacity-10 font-mono text-[8rem] font-black select-none group-hover:opacity-20 transition-opacity italic">
+            04
+          </div>
+          <h3 className="text-xl sm:text-3xl font-black mb-6 md:mb-8 flex items-center gap-3 sm:gap-5 italic">
+            <Trophy size={32} className="text-yellow-400" />
+            BOWLED-OUT
+          </h3>
+          <div className="space-y-6">
+            {[
+              { label: "1ST PLACE", prize: "Winner", color: "text-yellow-400" },
+              { label: "2ND PLACE", prize: "Runner Up", color: "text-white" },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="flex justify-between items-center p-4 sm:p-5 border border-white/10 bg-black group-hover:border-yellow-500/30 transition-colors"
+              >
+                <span className="font-mono text-[10px] sm:text-xs text-gray-400 tracking-[0.15em] sm:tracking-[0.3em] font-black">
+                  {item.label}
+                </span>
+                <span className={`text-lg sm:text-xl md:text-2xl font-black ${item.color} font-mono tracking-tighter`}>
                   {item.prize}
                 </span>
               </div>

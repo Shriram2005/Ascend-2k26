@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion, useMotionValue } from "framer-motion";
-import { Image, Code2, Cpu, Gamepad2 } from "lucide-react";
+import { Code2, Cpu, Gamepad2, Trophy, ArrowRight } from "lucide-react";
 
 interface EventCardProps {
   title: string;
@@ -11,9 +12,10 @@ interface EventCardProps {
   icon: React.ReactNode;
   desc: string;
   tags: string[];
+  href: string;
 }
 
-const EventCard = ({ title, subtitle, accent, icon, desc, tags }: EventCardProps) => {
+const EventCard = ({ title, subtitle, accent, icon, desc, tags, href }: EventCardProps) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -28,13 +30,21 @@ const EventCard = ({ title, subtitle, accent, icon, desc, tags }: EventCardProps
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       whileHover={{ y: -10 }}
-      className="group relative min-h-[350px] sm:min-h-[400px] bg-[#050505] border border-white/5 p-6 sm:p-8 md:p-10 overflow-hidden backdrop-blur-sm text-left transition-colors hover:border-white/10"
+      className="group relative min-h-[380px] sm:min-h-[420px] bg-[#050505] border border-white/5 p-6 sm:p-8 md:p-10 overflow-hidden backdrop-blur-sm text-left transition-colors hover:border-white/10 flex flex-col"
     >
       <div className="absolute top-0 left-0 w-8 h-8 border-t border-l border-white/10" />
       <div className="absolute bottom-0 right-0 w-8 h-8 border-b border-r border-white/10" />
+      {/* Accent top line on hover */}
+      <div
+        className="absolute top-0 left-0 right-0 h-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        style={{ background: accent }}
+      />
 
       <div className="relative z-10 flex flex-col h-full">
-        <div className="w-20 h-20 mb-8 flex items-center justify-center border border-white/10 bg-white/5 rounded-sm relative group-hover:scale-110 transition-transform">
+        <div
+          className="w-20 h-20 mb-8 flex items-center justify-center border border-white/10 bg-white/5 rounded-sm relative group-hover:scale-110 transition-transform"
+          style={{ borderColor: `${accent}30` }}
+        >
           {React.isValidElement(icon) &&
             React.cloneElement(icon as React.ReactElement<{ size?: number; style?: React.CSSProperties }>, {
               size: 40,
@@ -52,7 +62,7 @@ const EventCard = ({ title, subtitle, accent, icon, desc, tags }: EventCardProps
         <h3 className="text-2xl sm:text-4xl md:text-5xl font-black mb-4 sm:mb-6 text-white uppercase tracking-tighter leading-[0.85] italic">
           {title}
         </h3>
-        <p className="text-gray-400 text-base sm:text-lg mb-6 sm:mb-8 leading-tight flex-grow font-bold tracking-tight">
+        <p className="text-gray-400 text-base sm:text-lg mb-6 sm:mb-8 leading-tight font-bold tracking-tight flex-grow">
           {desc}
         </p>
 
@@ -67,6 +77,17 @@ const EventCard = ({ title, subtitle, accent, icon, desc, tags }: EventCardProps
               </span>
             ))}
           </div>
+          <Link
+            href={href}
+            className="inline-flex items-center gap-2 font-mono text-[10px] tracking-[0.3em] uppercase font-black transition-colors group/link mt-1"
+            style={{ color: accent }}
+          >
+            View Details
+            <ArrowRight
+              size={12}
+              className="group-hover/link:translate-x-1 transition-transform"
+            />
+          </Link>
         </div>
       </div>
     </motion.div>
@@ -94,36 +115,40 @@ export const TracksSection = () => (
 
       <div className="grid md:grid-cols-2 gap-8 md:gap-12">
         <EventCard
-          title="POSTER COMPETITION"
-          subtitle="EVENT_01 // CREATIVE"
-          accent="#A855F7"
-          icon={<Image />}
-          desc="Showcase your creativity and technical knowledge through visually stunning posters. Present innovative ideas on trending tech topics."
-          tags={["Creativity", "Presentation", "Innovation"]}
+          title="MINI HACKATHON"
+          subtitle="EVENT_01 // BUILD"
+          accent="#00FF55"
+          icon={<Cpu />}
+          desc="Build a working prototype in a limited time. Solve real-world problems with your team and impress the judges with your innovative solution."
+          tags={["Teamwork", "Problem Solving", "Prototype"]}
+          href="/events/mini-hackathon"
+        />
+        <EventCard
+          title="BGMI TOURNAMENT"
+          subtitle="EVENT_02 // GAMING"
+          accent="#FF6B35"
+          icon={<Gamepad2 />}
+          desc="Battle it out in an intense BGMI squad tournament. Team up, strategize, and claim victory in the ultimate mobile gaming showdown."
+          tags={["Strategy", "Teamwork", "Battle Royale"]}
+          href="/events/bgmi"
         />
         <EventCard
           title="BLIND CODING"
-          subtitle="EVENT_02 // HARDCORE"
+          subtitle="EVENT_03 // HARDCORE"
           accent="#00CCFF"
           icon={<Code2 />}
-          desc="Code without seeing the screen! Test your programming skills, muscle memory, and logical thinking in this intense coding challenge."
+          desc="Code without seeing the screen! Test your programming skills, muscle memory, and logical thinking in this intense individual challenge."
           tags={["Logic", "Speed", "Precision"]}
+          href="/events/blind-coding"
         />
         <EventCard
-          title="MINI HACKATHON"
-          subtitle="EVENT_03 // BUILD"
-          accent="#00FF55"
-          icon={<Cpu />}
-          desc="Build a working prototype in a limited time. Solve real-world problems with your team and impress the judges with your solution."
-          tags={["Teamwork", "Problem Solving", "Prototype"]}
-        />
-        <EventCard
-          title="PUBG TOURNAMENT"
-          subtitle="EVENT_04 // GAMING"
-          accent="#FF6B35"
-          icon={<Gamepad2 />}
-          desc="Battle it out in an intense PUBG Mobile tournament. Squad up, strategize, and claim victory in the ultimate gaming showdown."
-          tags={["Strategy", "Teamwork", "Battle Royale"]}
+          title="BOWLED-OUT"
+          subtitle="EVENT_04 // QUIZ"
+          accent="#FACC15"
+          icon={<Trophy />}
+          desc="A cricket-themed rapid-fire elimination quiz. One wrong answer and you're out! Test your tech knowledge and survive every inning."
+          tags={["Quiz", "Rapid Fire", "Elimination"]}
+          href="/events/bowled-out"
         />
       </div>
     </div>

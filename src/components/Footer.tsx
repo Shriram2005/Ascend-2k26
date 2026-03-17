@@ -38,28 +38,28 @@ export const Footer = () => (
           </h4>
           <div className="flex flex-col gap-6 text-xs font-black tracking-widest uppercase">
             <Link
-              href="#events"
-              className="text-gray-400 hover:text-purple-500 transition-colors italic"
-            >
-              ./POSTER_COMPETITION
-            </Link>
-            <Link
-              href="#events"
-              className="text-gray-400 hover:text-purple-500 transition-colors italic"
-            >
-              ./BLIND_CODING
-            </Link>
-            <Link
-              href="#events"
+              href="/events/mini-hackathon"
               className="text-gray-400 hover:text-purple-500 transition-colors italic"
             >
               ./MINI_HACKATHON
             </Link>
             <Link
-              href="#events"
+              href="/events/bgmi"
               className="text-gray-400 hover:text-purple-500 transition-colors italic"
             >
-              ./PUBG_TOURNAMENT
+              ./BGMI_TOURNAMENT
+            </Link>
+            <Link
+              href="/events/blind-coding"
+              className="text-gray-400 hover:text-purple-500 transition-colors italic"
+            >
+              ./BLIND_CODING
+            </Link>
+            <Link
+              href="/events/bowled-out"
+              className="text-gray-400 hover:text-purple-500 transition-colors italic"
+            >
+              ./BOWLED_OUT
             </Link>
           </div>
         </div>
@@ -96,7 +96,7 @@ export const Footer = () => (
         <div className="flex items-center gap-6">
           <div className="w-12 h-12 relative rounded-sm border border-white/20 overflow-hidden grayscale group hover:grayscale-0 transition-all">
             <Image
-              src="/clg_logo_white.png"
+              src="/ascend_logo.jpeg"
               alt="Logo"
               width={48}
               height={48}

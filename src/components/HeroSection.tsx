@@ -156,7 +156,7 @@ export const HeroSection = () => {
           variants={slideUp}
           className="flex flex-wrap items-center justify-center gap-3 mt-4"
         >
-          {["Poster Competition", "Blind Coding", "Mini Hackathon", "PUBG Tournament"].map(
+          {["Mini Hackathon", "BGMI Tournament", "Blind Coding", "Bowled-Out"].map(
             (event) => (
               <div
                 key={event}
