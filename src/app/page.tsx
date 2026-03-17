@@ -5,7 +5,7 @@ import { useScroll, useSpring, motion, AnimatePresence } from "framer-motion";
 import { Loader } from "@/components/Loader";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
-import { StatsBar } from "@/components/StatsBar";
+// import { StatsBar } from "@/components/StatsBar";
 import { AboutSection } from "@/components/AboutSection";
 import { TracksSection } from "@/components/TracksSection";
 import { DomainsSection } from "@/components/DomainsSection";
@@ -53,7 +53,7 @@ export default function Home() {
           <CyberBackground />
           <Navbar />
           <HeroSection />
-          <StatsBar />
+          {/* <StatsBar /> */}
           <AboutSection />
           <TracksSection />
           <DomainsSection />

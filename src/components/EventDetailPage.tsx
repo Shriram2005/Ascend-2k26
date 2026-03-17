@@ -337,7 +337,7 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
                 className="px-8 py-4 font-mono text-[10px] tracking-[0.4em] uppercase font-black"
                 style={{ background: event.accent, color: "#000" }}
               >
-                28 MARCH 2026 · FREE ENTRY
+                28 MARCH 2026 · KKWIEER
               </div>
             )}
           </motion.div>

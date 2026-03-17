@@ -17,12 +17,12 @@ const event: EventData = {
   description:
     "The arena is set. Squad up with your crew and fight for dominance in an intense Battlegrounds Mobile India tournament. Outlast, outsmart, and outshoot every squad standing in your way. Only the last team standing claims the title. Are you ready to drop hot?",
   teamSize: "Squad — 4 Members (Fixed)",
-  time: "02:00 PM – 04:30 PM",
+  time: "10:30 AM – 12:30 PM",
   tags: ["Strategy", "Teamwork", "Battle Royale", "Esports", "BGMI"],
   highlights: [
     { label: "Duration", value: "2.5 Hrs" },
     { label: "Squad Size", value: "4 Players" },
-    { label: "Entry Fee", value: "Free" },
+    { label: "Entry Fee", value: "₹200 / Team" },
     { label: "Platform", value: "Mobile" },
   ],
   prizes: [
@@ -39,7 +39,7 @@ const event: EventData = {
     "Any dispute or suspicious activity will be investigated by organizers.",
     "Organizers reserve the right to modify rules; final decision is theirs.",
   ],
-  registrationLink: "https://qrfy.io/HRn8Ba9oJ1",
+  registrationLink: "https://forms.gle/9XxaaekTB4GE2wQo8",
 };
 
 export default function BGMIPage() {

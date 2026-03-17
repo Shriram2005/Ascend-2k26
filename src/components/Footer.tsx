@@ -50,10 +50,10 @@ export const Footer = () => (
               ./BGMI_TOURNAMENT
             </Link>
             <Link
-              href="/events/blind-coding"
+              href="/events/art-arena"
               className="text-gray-400 hover:text-purple-500 transition-colors italic"
             >
-              ./BLIND_CODING
+              ./ART_ARENA
             </Link>
             <Link
               href="/events/bowled-out"

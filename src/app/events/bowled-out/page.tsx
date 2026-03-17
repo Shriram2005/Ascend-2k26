@@ -5,41 +5,41 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Bowled-Out — ASCEND 2K26",
   description:
-    "Cricket-inspired elimination quiz at ASCEND 2K26 — one wrong answer and you're out! MCA Dept., KKWIEER Nashik.",
+    "Cricket skill challenge at ASCEND 2K26 where teams compete to hit the stumps with precision.",
 };
 
 const event: EventData = {
   number: "04",
-  title: "Bowled-Out",
-  subtitle: "CRICKET QUIZ // ELIMINATION // RAPID FIRE",
+  title: "Bowl'ed Out",
+  subtitle: "CRICKET // ACCURACY // TOURNAMENT",
   accent: "#FACC15",
   icon: <Trophy />,
   description:
-    "Where cricket meets technology. Bowled-Out is a rapid-fire elimination quiz with a cricket twist — one wrong answer and you're bowled out of the game. Face off through multiple innings of increasingly difficult technical questions. From coding concepts to tech trivia, the last one standing takes the trophy.",
-  teamSize: "Individual — 1 Participant",
-  time: "09:30 AM – 11:00 AM",
-  tags: ["Quiz", "Rapid Fire", "Elimination", "Tech Trivia", "Cricket Theme"],
+    "A unique cricket-based game where teams aim to directly hit the stumps without a batter. Teams compete in tournament-style rounds that test throwing accuracy and consistency under pressure.",
+  teamSize: "Team of 6 Players",
+  time: "11:00 AM – 03:00 PM",
+  tags: ["Cricket", "Accuracy", "Team Event", "Tournament", "Sports"],
   highlights: [
-    { label: "Duration", value: "1.5 Hrs" },
-    { label: "Team Size", value: "Solo" },
-    { label: "Entry Fee", value: "Free" },
-    { label: "Format", value: "Elimination" },
+    { label: "Duration", value: "4 Hrs" },
+    { label: "Team Size", value: "6" },
+    { label: "Entry Fee", value: "₹150 / Team" },
+    { label: "Prize", value: "₹1500" },
   ],
   prizes: [
     { label: "1st Place — Winner", value: "Trophy + Certificate" },
     { label: "2nd Place — Runner Up", value: "Certificate" },
   ],
   rules: [
-    "Individual participation only. No team entries permitted.",
-    "The event has multiple rounds (Innings) of increasing difficulty.",
-    "One wrong answer = Bowled Out. You are immediately eliminated.",
-    "Questions span: programming, algorithms, tech trivia, and aptitude.",
-    "Each question has a time limit — hesitation may cost you your wicket.",
-    "Lifelines (e.g., 50-50) may be available in early rounds at organizer discretion.",
-    "The final round is a head-to-head 'Test Match' between the last two players.",
-    "Organizers' and judges' decisions are final and cannot be challenged.",
+    "Each team must have exactly 6 players.",
+    "Each team gets 3 overs in a round.",
+    "Each player bowls 3 deliveries.",
+    "Points are based on direct stump hits.",
+    "Highest total stump hits determine winners.",
+    "Unsporting behavior may lead to disqualification.",
+    "Organizers' and judges' decisions are final.",
+    "All safety and ground rules must be followed.",
   ],
-  registrationLink: "https://qr-codes.io/zG2qVq",
+  registrationLink: "https://forms.gle/D1BQcMofDDWrWLjM6",
 };
 
 export default function BowledOutPage() {

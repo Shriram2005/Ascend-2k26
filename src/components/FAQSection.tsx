@@ -6,11 +6,11 @@ import { HelpCircle } from "lucide-react";
 const faqs = [
   {
     q: "Is there a registration fee?",
-    a: "No! ASCEND 2K26 is completely free for all participants. Just register and show up!",
+    a: "Yes, event-wise fees apply: Mini Hackathon ₹200/team, Art Arena ₹50, BGMI ₹200/squad, and Bowl'ed Out ₹150/team.",
   },
   {
     q: "What is the team size?",
-    a: "For Mini Hackathon: 2-4 members per team. For PUBG Tournament: Squad of 4. Poster Competition & Blind Coding are individual events.",
+    a: "Mini Hackathon allows 2-4 members per team, BGMI requires a fixed squad of 4, Art Arena is individual, and Bowl'ed Out is a team of 6.",
   },
   {
     q: "Can I participate in multiple events?",
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: "What should I bring?",
-    a: "Bring your own laptop for coding events. For PUBG, bring your mobile phone with PUBG installed. For Poster Competition, materials will be specified during registration.",
+    a: "Bring your laptop for Mini Hackathon, your mobile phone with BGMI installed for BGMI, and design setup for Art Arena (no AI tools allowed).",
   },
   {
     q: "Is it open for all colleges?",

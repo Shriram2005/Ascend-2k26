@@ -16,10 +16,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ASCEND 2K26 | MCA Department | KKWIEER, Nashik",
   description:
-    "ASCEND 2K26 — It's Time to Rise! A National-Level technical event on 28th March 2026 by Department of MCA, K. K. Wagh Institute of Engineering Education and Research, Nashik. Poster Competition, Blind Coding, Mini Hackathon, PUBG Tournament & more!",
+    "ASCEND 2K26 — It's Time to Rise! A National-Level technical symposium on 28th March 2026 by Department of MCA, K. K. Wagh Institute of Engineering Education and Research, Nashik. Mini Hackathon, Art Arena, BGMI Tournament, Bowl'ed Out and more!",
   authors: [{ name: "ASCEND 2K26 Team - MCA Department" }],
   keywords:
-    "ASCEND 2K26,hackathon,coding,Nashik,KKWIEER,K K Wagh,MCA,poster competition,blind coding,PUBG tournament,mini hackathon,2026",
+    "ASCEND 2K26,hackathon,art arena,Nashik,KKWIEER,K K Wagh,MCA,bgmi tournament,bowl'ed out,mini hackathon,technical symposium,2026",
   openGraph: {
     title: "ASCEND 2K26 | It's Time to Rise",
     description:

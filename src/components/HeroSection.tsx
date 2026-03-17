@@ -102,16 +102,16 @@ export const HeroSection = () => {
         </motion.div>
 
         {/* Title */}
-        <motion.div variants={slideUp} className="relative mb-6">
+        <motion.div variants={slideUp} className="relative mb-6 px-1 sm:px-2 overflow-visible">
           <motion.h1
             variants={glitchVariant}
             animate="animate"
-            className="text-6xl sm:text-8xl md:text-[12rem] lg:text-[12vw] font-black leading-[0.8] tracking-tighter relative z-10 uppercase scale-y-110 italic px-4"
+            className="text-[clamp(3.1rem,15.5vw,12rem)] md:text-[clamp(7rem,11vw,12rem)] font-black leading-[0.82] tracking-tight relative z-10 uppercase scale-y-110 italic px-0 overflow-visible mx-auto"
           >
             <span className="block text-transparent bg-clip-text bg-gradient-to-br from-purple-500 via-white to-cyan-400 drop-shadow-[0_0_40px_rgba(168,85,247,0.4)]">
               ASCEND
               <br />
-              <span className="text-4xl sm:text-6xl md:text-[8rem]">2K26</span>
+              <span className="text-[clamp(2.2rem,10.5vw,8rem)]">2K26</span>
             </span>
           </motion.h1>
           <div
@@ -135,8 +135,6 @@ export const HeroSection = () => {
           <div className="flex items-center gap-4 text-gray-400 font-mono text-xs md:text-sm tracking-[0.2em] font-bold">
             <Calendar size={16} className="text-purple-500" />
             <span>28 MARCH, 2026</span>
-            <div className="w-1.5 h-1.5 rounded-full bg-slate-800" />
-            <span>NASHIK_HQ</span>
           </div>
           <p className="text-[10px] text-gray-400 font-mono tracking-widest uppercase">
             K. K. Wagh Institute of Engineering Education &amp; Research

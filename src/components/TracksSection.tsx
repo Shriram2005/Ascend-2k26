@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion, useMotionValue } from "framer-motion";
-import { Code2, Cpu, Gamepad2, Trophy, ArrowRight } from "lucide-react";
+import { Palette, Cpu, Gamepad2, Trophy, ArrowRight } from "lucide-react";
 
 interface EventCardProps {
   title: string;
@@ -133,13 +133,13 @@ export const TracksSection = () => (
           href="/events/bgmi"
         />
         <EventCard
-          title="BLIND CODING"
-          subtitle="EVENT_03 // HARDCORE"
+          title="ART ARENA"
+          subtitle="EVENT_03 // CREATIVE"
           accent="#00CCFF"
-          icon={<Code2 />}
-          desc="Code without seeing the screen! Test your programming skills, muscle memory, and logical thinking in this intense individual challenge."
-          tags={["Logic", "Speed", "Precision"]}
-          href="/events/blind-coding"
+          icon={<Palette />}
+          desc="A poster-making challenge where creativity meets tech thinking. Build an original poster from the on-spot problem statement."
+          tags={["Creativity", "Design", "Originality"]}
+          href="/events/art-arena"
         />
         <EventCard
           title="BOWLED-OUT"

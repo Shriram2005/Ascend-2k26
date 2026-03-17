@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Cpu, Gamepad2, Code2, Trophy } from "lucide-react";
+import { Cpu, Gamepad2, Palette, Trophy } from "lucide-react";
 
 export const BountySection = () => (
   <section id="bounty" className="py-20 md:py-40 relative z-10 bg-black overflow-hidden">
@@ -25,7 +25,7 @@ export const BountySection = () => (
         </div>
       </div>
 
-      {/* Prize Cards by Event — ordered: Mini Hackathon, BGMI, Blind Coding, Bowled-Out */}
+      {/* Prize Cards by Event — ordered: Mini Hackathon, BGMI, Art Arena, Bowl'ed Out */}
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-20">
 
         {/* Mini Hackathon */}
@@ -42,9 +42,9 @@ export const BountySection = () => (
           </h3>
           <div className="space-y-6">
             {[
-              { label: "1ST PLACE", prize: "Winner", color: "text-green-400" },
-              { label: "2ND PLACE", prize: "Runner Up", color: "text-white" },
-              { label: "3RD PLACE", prize: "2nd Runner Up", color: "text-white" },
+              { label: "TOP TEAM", prize: "Winner", color: "text-green-400" },
+              { label: "RUNNER UP", prize: "2nd Place", color: "text-white" },
+              { label: "SPECIAL MENTION", prize: "Certificate", color: "text-white" },
             ].map((item, idx) => (
               <div
                 key={idx}
@@ -93,7 +93,7 @@ export const BountySection = () => (
           </div>
         </motion.div>
 
-        {/* Blind Coding */}
+        {/* Art Arena */}
         <motion.div
           whileHover={{ scale: 1.01 }}
           className="p-6 sm:p-8 md:p-10 border-2 border-cyan-500/20 bg-cyan-500/5 rounded-sm relative group overflow-hidden"
@@ -102,13 +102,13 @@ export const BountySection = () => (
             03
           </div>
           <h3 className="text-xl sm:text-3xl font-black mb-6 md:mb-8 flex items-center gap-3 sm:gap-5 italic">
-            <Code2 size={32} className="text-cyan-500" />
-            BLIND CODING
+            <Palette size={32} className="text-cyan-500" />
+            ART ARENA
           </h3>
           <div className="space-y-6">
             {[
-              { label: "1ST PLACE", prize: "Winner", color: "text-cyan-400" },
-              { label: "2ND PLACE", prize: "Runner Up", color: "text-white" },
+              { label: "WINNER", prize: "₹1000", color: "text-cyan-400" },
+              { label: "CERTIFICATE", prize: "Participation", color: "text-white" },
             ].map((item, idx) => (
               <div
                 key={idx}
@@ -125,7 +125,7 @@ export const BountySection = () => (
           </div>
         </motion.div>
 
-        {/* Bowled-Out */}
+        {/* Bowl'ed Out */}
         <motion.div
           whileHover={{ scale: 1.01 }}
           className="p-6 sm:p-8 md:p-10 border-2 border-yellow-500/20 bg-yellow-500/5 rounded-sm relative group overflow-hidden"
@@ -135,12 +135,12 @@ export const BountySection = () => (
           </div>
           <h3 className="text-xl sm:text-3xl font-black mb-6 md:mb-8 flex items-center gap-3 sm:gap-5 italic">
             <Trophy size={32} className="text-yellow-400" />
-            BOWLED-OUT
+            BOWL'ED OUT
           </h3>
           <div className="space-y-6">
             {[
-              { label: "1ST PLACE", prize: "Winner", color: "text-yellow-400" },
-              { label: "2ND PLACE", prize: "Runner Up", color: "text-white" },
+              { label: "WINNER", prize: "₹1500", color: "text-yellow-400" },
+              { label: "RUNNER UP", prize: "Certificate", color: "text-white" },
             ].map((item, idx) => (
               <div
                 key={idx}

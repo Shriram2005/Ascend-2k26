@@ -65,8 +65,7 @@ export const AboutSection = () => (
             <span className="text-purple-400">ASCEND 2K26</span> is a National-Level
             Technical Event organized by the Department of MCA at K. K. Wagh Institute
             of Engineering Education &amp; Research, Nashik. Compete in exciting
-            events like Poster Competition, Blind Coding, Mini Hackathon, and
-            PUBG Tournament!
+            events like Mini Hackathon, Art Arena, BGMI Tournament, and Bowl&apos;ed Out.
           </p>
           <div className="p-8 border-l-4 border-purple-600 bg-white/5 rounded-sm backdrop-blur-sm">
             <p className="text-white text-sm font-mono tracking-widest uppercase italic font-black">

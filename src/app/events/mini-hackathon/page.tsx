@@ -11,14 +11,14 @@ export const metadata: Metadata = {
 const event: EventData = {
   number: "01",
   title: "Mini Hackathon",
-  subtitle: "BUILD // INNOVATE // PROTOTYPE",
+  subtitle: "PROJECT // PRESENT // INNOVATE",
   accent: "#00FF55",
   icon: <Cpu />,
   description:
-    "Got an idea? Build it. The Mini Hackathon challenges teams to conceive, design, and develop a working prototype within a tight deadline. From web apps to automation tools — if you can dream it, you can build it. Present your solution to our panel of judges and compete for the top spot.",
+    "The Mini Hackathon is a project-based competition where participants present a pre-developed solution for a given problem statement. Teams showcase their project, explain their approach, and demonstrate core functionality to a panel of judges.",
   teamSize: "2 – 4 Members Per Team",
-  time: "01:30 PM – 04:00 PM",
-  tags: ["Teamwork", "Problem Solving", "Prototype", "Innovation", "Full Stack"],
+  time: "02:00 PM – 05:00 PM",
+  tags: ["Innovation", "Problem Solving", "Project Demo", "Presentation", "Teamwork"],
   highlights: [
     { label: "Duration", value: "2.5 Hrs" },
     { label: "Team Size", value: "2–4" },
@@ -31,16 +31,16 @@ const event: EventData = {
     { label: "3rd Place — 2nd Runner Up", value: "Certificate" },
   ],
   rules: [
-    "Teams of 2 to 4 participants. Solo entries are not permitted.",
-    "All code must be written during the event — no pre-built projects.",
-    "Any programming language, framework, or platform is allowed.",
-    "Use of AI tools (ChatGPT, Copilot, etc.) is allowed and encouraged.",
-    "Teams must submit their project within the allotted time.",
-    "A 5-minute live demonstration is required for judging.",
-    "Judging criteria: Innovation, Functionality, UI/UX, and Presentation.",
+    "Individual or team participation is allowed (as per organizer confirmation).",
+    "Projects must be pre-built and based on the announced problem context.",
+    "Presentation and live demonstration are mandatory.",
+    "Judging focuses on innovation, problem-solving approach, technical implementation, and presentation.",
+    "Teams must complete presentation within the allocated time slot.",
+    "The judges' decision will be final.",
+    "Any plagiarism or copied work can lead to disqualification.",
     "Organizers' and judges' decisions are final and binding.",
   ],
-  registrationLink: "https://forms.gle/minihackathon",
+  registrationLink: "https://forms.gle/minihackathon-dummy",
 };
 
 export default function MiniHackathonPage() {
