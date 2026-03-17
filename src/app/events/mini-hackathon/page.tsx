@@ -3,9 +3,18 @@ import { Cpu } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mini Hackathon — ASCEND 2K26",
+  title: "Mini Hackathon — ASCEND 2K26 | Project-Based Innovation Competition",
   description:
-    "Build a working prototype in limited time at the Mini Hackathon event — ASCEND 2K26, MCA Dept., KKWIEER Nashik.",
+    "Mini Hackathon at ASCEND 2K26: Present pre-developed projects in 2.5 hours. ₹200/team entry. Win trophy & certificate. Innovation, problem-solving & presentation skills. 28 March 2026 at KKWIEER Nashik.",
+  keywords: "mini hackathon,ASCEND 2K26,hackathon competition,innovation challenge,project demo,technical symposium,KKWIEER,Nashik,student competition",
+  openGraph: {
+    title: "Mini Hackathon — ASCEND 2K26 | Innovation Project Competition",
+    description: "Present your pre-developed project at ASCEND 2K26 Mini Hackathon. 2-4 member teams, ₹200 entry, prizes available.",
+  },
+  twitter: {
+    title: "Mini Hackathon — ASCEND 2K26",
+    description: "Project-based hackathon competition at ASCEND 2K26. March 28, 2026. Register now!",
+  },
 };
 
 const event: EventData = {

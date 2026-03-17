@@ -3,9 +3,18 @@ import { Gamepad2 } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "BGMI Tournament — ASCEND 2K26",
+  title: "BGMI Tournament — ASCEND 2K26 | Mobile Esports Battle Royale",
   description:
-    "Squad up and battle it out in the BGMI Tournament at ASCEND 2K26, MCA Dept., KKWIEER Nashik.",
+    "BGMI Squad Tournament at ASCEND 2K26: Competitive Battle Royale esports on March 28. 4-person squads, ₹200/team entry. Win trophy & certificate. Strategy, teamwork & precision gaming.",
+  keywords: "BGMI tournament,esports,battle royale,gaming competition,mobile gaming,squad tournament,ASCEND 2K26,Nashik esports,competitive gaming",
+  openGraph: {
+    title: "BGMI Tournament — ASCEND 2K26 | Esports Squad Battle",
+    description: "Competitive BGMI squad tournament at ASCEND 2K26. 4-player teams, ₹200 entry, trophy & prizes.",
+  },
+  twitter: {
+    title: "BGMI Tournament — ASCEND 2K26",
+    description: "Battle Royale esports tournament at ASCEND 2K26. March 28, 2026. Register your squad!",
+  },
 };
 
 const event: EventData = {

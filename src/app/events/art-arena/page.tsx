@@ -3,9 +3,18 @@ import { Palette } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Art Arena — ASCEND 2K26",
+  title: "Art Arena — ASCEND 2K26 | Creative Poster Design Competition",
   description:
-    "Poster-making competition at ASCEND 2K26 where creativity meets design thinking.",
+    "Art Arena at ASCEND 2K26: Solo poster-making design competition. ₹50 entry fee. ₹1000 prize. Create original designs without AI tools. Showcase your creativity & design thinking on March 28 at KKWIEER Nashik.",
+  keywords: "art arena,poster making,design competition,creative design,poster design,ASCEND 2K26,design competition,creativity,student art event",
+  openGraph: {
+    title: "Art Arena — ASCEND 2K26 | Creative Poster Design Event",
+    description: "Solo poster design competition at ASCEND 2K26. ₹50 entry, ₹1000 prize. Showcase your creativity!",
+  },
+  twitter: {
+    title: "Art Arena — ASCEND 2K26",
+    description: "Creative poster design competition at ASCEND 2K26. March 28, 2026. Solo participation. Register now!",
+  },
 };
 
 const event: EventData = {
