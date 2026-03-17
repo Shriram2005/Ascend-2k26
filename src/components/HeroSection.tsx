@@ -86,10 +86,10 @@ export const HeroSection = () => {
         {/* Badge */}
         <motion.div
           variants={slideUp}
-          className="inline-flex items-center gap-3 px-5 py-2 border border-purple-500/20 bg-purple-500/5 rounded-full mb-6 backdrop-blur-sm"
+          className="inline-flex items-center gap-2 md:gap-3 px-3 md:px-5 py-2 border border-purple-500/20 bg-purple-500/5 rounded-full mb-6 backdrop-blur-sm"
         >
           <div className="w-2 h-2 rounded-full bg-purple-500 animate-pulse" />
-          <span className="font-mono text-[9px] text-purple-400 tracking-[0.5em] font-black uppercase">
+          <span className="font-mono text-[7px] md:text-[9px] text-purple-400 tracking-[0.3em] md:tracking-[0.5em] font-black uppercase">
             K. K. Wagh Education Society&apos;s
           </span>
         </motion.div>

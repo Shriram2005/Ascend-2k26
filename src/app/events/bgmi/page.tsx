@@ -39,6 +39,7 @@ const event: EventData = {
     "Any dispute or suspicious activity will be investigated by organizers.",
     "Organizers reserve the right to modify rules; final decision is theirs.",
   ],
+  registrationLink: "https://qrfy.io/HRn8Ba9oJ1",
 };
 
 export default function BGMIPage() {

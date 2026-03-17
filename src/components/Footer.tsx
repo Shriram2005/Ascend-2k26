@@ -96,7 +96,7 @@ export const Footer = () => (
         <div className="flex items-center gap-6">
           <div className="w-12 h-12 relative rounded-sm border border-white/20 overflow-hidden grayscale group hover:grayscale-0 transition-all">
             <Image
-              src="/ascend_logo.jpeg"
+              src="/clg_logo_white.png"
               alt="Logo"
               width={48}
               height={48}

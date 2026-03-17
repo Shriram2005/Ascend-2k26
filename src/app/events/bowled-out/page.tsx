@@ -39,6 +39,7 @@ const event: EventData = {
     "The final round is a head-to-head 'Test Match' between the last two players.",
     "Organizers' and judges' decisions are final and cannot be challenged.",
   ],
+  registrationLink: "https://qr-codes.io/zG2qVq",
 };
 
 export default function BowledOutPage() {

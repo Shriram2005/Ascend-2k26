@@ -39,6 +39,7 @@ const event: EventData = {
     "Syntax errors, logical errors, and incomplete programs will be penalized.",
     "Judges' evaluation and decision is final.",
   ],
+  registrationLink: "https://forms.gle/blindcoding",
 };
 
 export default function BlindCodingPage() {

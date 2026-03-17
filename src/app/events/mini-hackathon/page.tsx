@@ -22,7 +22,7 @@ const event: EventData = {
   highlights: [
     { label: "Duration", value: "2.5 Hrs" },
     { label: "Team Size", value: "2–4" },
-    { label: "Entry Fee", value: "Free" },
+    { label: "Entry Fee", value: "₹200" },
     { label: "Venue", value: "D Block" },
   ],
   prizes: [
@@ -34,12 +34,13 @@ const event: EventData = {
     "Teams of 2 to 4 participants. Solo entries are not permitted.",
     "All code must be written during the event — no pre-built projects.",
     "Any programming language, framework, or platform is allowed.",
-    "Use of AI tools (ChatGPT, Copilot, etc.) is strictly prohibited.",
+    "Use of AI tools (ChatGPT, Copilot, etc.) is allowed and encouraged.",
     "Teams must submit their project within the allotted time.",
     "A 5-minute live demonstration is required for judging.",
     "Judging criteria: Innovation, Functionality, UI/UX, and Presentation.",
     "Organizers' and judges' decisions are final and binding.",
   ],
+  registrationLink: "https://forms.gle/minihackathon",
 };
 
 export default function MiniHackathonPage() {

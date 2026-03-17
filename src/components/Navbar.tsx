@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronRight } from "lucide-react";
 
@@ -16,6 +17,12 @@ const NAV_LINKS = [
 
 export const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
+  // Prefix hash links with "/" when on non-home pages so they navigate correctly
+  const resolveHref = (href: string) =>
+    href.startsWith("#") && !isHome ? `/${href}` : href;
 
   return (
     <>
@@ -23,23 +30,16 @@ export const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-24 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 md:gap-3 group">
-            <motion.div
-              whileHover={{ rotate: 180, scale: 1.1 }}
-              transition={{ duration: 0.6, ease: "anticipate" }}
-              className="relative w-8 h-8 md:w-10 md:h-10 flex items-center justify-center"
-            >
-              <div className="absolute inset-0 bg-gradient-to-tr from-purple-500 via-cyan-400 to-blue-500 rounded-lg opacity-30 blur-md group-hover:opacity-60 transition-opacity" />
-              <div className="relative w-full h-full border border-white/20 bg-black/60 rounded-lg flex items-center justify-center backdrop-blur-sm overflow-hidden p-1">
-                <Image
-                  src="/ascend_logo.jpeg"
-                  alt="ASCEND Logo"
-                  width={32}
-                  height={32}
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </motion.div>
+            <div className="relative w-10 h-10 md:w-14 md:h-14 flex items-center justify-center overflow-hidden">
+              <Image
+                src="/clg_logo_white.png"
+                alt="ASCEND Logo"
+                width={56}
+                height={56}
+                className="object-contain w-full h-full"
+                priority
+              />
+            </div>
             <div className="flex flex-col">
               <span className="font-black text-lg md:text-xl tracking-tighter leading-none">
                 ASCEND<span className="text-purple-400">2K26</span>
@@ -66,7 +66,7 @@ export const Navbar = () => {
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.label}
-                href={link.href}
+                href={resolveHref(link.href)}
                 className="hover:text-white transition-colors relative group"
               >
                 {link.label}
@@ -118,7 +118,7 @@ export const Navbar = () => {
                       transition={{ delay: 0.05 * idx }}
                     >
                       <Link
-                        href={link.href}
+                        href={resolveHref(link.href)}
                         onClick={() => setMobileOpen(false)}
                         className="flex items-center gap-3 px-4 py-3.5 text-gray-400 hover:text-white hover:bg-white/5 transition-all rounded-sm group"
                       >

@@ -26,6 +26,7 @@ export interface EventData {
   prizes: Prize[];
   rules: string[];
   highlights: { label: string; value: string }[];
+  registrationLink?: string;
 }
 
 export const EventDetailPage = ({ event }: { event: EventData }) => {
@@ -213,6 +214,43 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
         </div>
       </section>
 
+      {/* ─── REGISTRATION CTA ─── */}
+      {event.registrationLink && (
+        <section className="py-16 md:py-24 relative z-10 bg-gradient-to-r from-white/[0.02] to-white/[0.01] border-y border-white/5">
+          <div className="max-w-5xl mx-auto px-4 md:px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <p className="font-mono text-[9px] tracking-[0.5em] uppercase font-black text-gray-400 mb-4">
+                Ready to Compete?
+              </p>
+              <h2 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tighter italic leading-none mb-8">
+                Register Now
+              </h2>
+              <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+                Secure your spot and join the competition. Limited slots available!
+              </p>
+              <a
+                href={event.registrationLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-12 py-5 font-mono text-[11px] tracking-[0.4em] uppercase font-black hover:shadow-xl transition-all transform hover:scale-105"
+                style={{
+                  background: event.accent,
+                  color: "#000",
+                  boxShadow: `0 0 30px ${event.accent}40`,
+                }}
+              >
+                Register for {event.title}
+              </a>
+            </motion.div>
+          </div>
+        </section>
+      )}
+
       {/* ─── PRIZES ─── */}
       <section className="py-16 md:py-28 relative z-10">
         <div className="max-w-5xl mx-auto px-4 md:px-6">
@@ -284,12 +322,24 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
             >
               ← All Events
             </Link>
-            <div
-              className="px-8 py-4 font-mono text-[10px] tracking-[0.4em] uppercase font-black"
-              style={{ background: event.accent, color: "#000" }}
-            >
-              28 MARCH 2026 · FREE ENTRY
-            </div>
+            {event.registrationLink ? (
+              <a
+                href={event.registrationLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 font-mono text-[10px] tracking-[0.4em] uppercase font-black hover:shadow-lg transition-all"
+                style={{ background: event.accent, color: "#000" }}
+              >
+                Register Now
+              </a>
+            ) : (
+              <div
+                className="px-8 py-4 font-mono text-[10px] tracking-[0.4em] uppercase font-black"
+                style={{ background: event.accent, color: "#000" }}
+              >
+                28 MARCH 2026 · FREE ENTRY
+              </div>
+            )}
           </motion.div>
         </div>
       </section>
