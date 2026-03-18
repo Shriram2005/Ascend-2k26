@@ -16,12 +16,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ASCEND 2K26 | National Technical Symposium | MCA KKWIEER Nashik",
   description:
-    "ASCEND 2K26: National-level technical symposium on March 28, 2026 at KKWIEER Nashik. Join 4 exciting events: Mini Hackathon, Art Arena (poster design), BGMI Tournament, and Bowl'ed Out. ₹50-₹200 entry fees.",
+    "ASCEND 2K26 is a national-level technical symposium on March 28, 2026 at KKWIEER Nashik with 4 competitions: Mini Hackathon, Art Arena, BGMI Tournament, and Bowl'ed Out.",
   authors: [{ name: "ASCEND 2K26 Team - MCA Department" }],
   creator: "MCA Department, KKWIEER",
   publisher: "K. K. Wagh Institute of Engineering Education and Research",
   keywords:
-    "ASCEND 2K26,national technical symposium,hackathon,art arena,poster making,BGMI tournament,esports,Bowl'ed Out,Nashik,KKWIEER,engineering event,MCA,college fest,technical competition,innovation,2026,Nashik events,student competition",
+    "ascend,ascend 2026,ascend kkw,ascend 2k26,ascend event,ASCEND 2K26,national technical symposium,hackathon,art arena,poster making,BGMI tournament,esports,Bowl'ed Out,Nashik,KKWIEER,engineering event,MCA,college fest,technical competition,innovation,2026,Nashik events,student competition",
   robots: {
     index: true,
     follow: true,
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ASCEND 2K26 | National Technical Symposium",
-    description: "Join ASCEND 2K26 on March 28 at KKWIEER Nashik. 4 exciting competitions. Register now!",
+    title: "ASCEND 2K26 (ASCEND 2026) | National Technical Symposium Event",
+    description: "Join ASCEND 2K26 on March 28 at KKWIEER Nashik.",
     creator: "@ASCEND2K26",
   },
   icons: {

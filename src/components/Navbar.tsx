@@ -19,6 +19,7 @@ export const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const isEventsPage = pathname.startsWith("/events");
 
   // Prefix hash links with "/" when on non-home pages so they navigate correctly
   const resolveHref = (href: string) =>
@@ -73,6 +74,14 @@ export const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-purple-500 transition-all group-hover:w-full" />
               </Link>
             ))}
+            {!isEventsPage && (
+              <Link
+                href={resolveHref("#events")}
+                className="ml-2 px-4 py-2 border border-purple-500/50 bg-purple-500/20 text-purple-200 hover:text-white hover:bg-purple-500/35 hover:border-purple-400 transition-all rounded-sm shadow-[0_0_18px_rgba(168,85,247,0.4)]"
+              >
+                REGISTER NOW
+              </Link>
+            )}
           </div>
         </div>
       </nav>
@@ -86,7 +95,7 @@ export const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm md:hidden"
+              className="fixed inset-0 z-60 bg-black/60 backdrop-blur-sm md:hidden"
               onClick={() => setMobileOpen(false)}
             />
             <motion.div
@@ -94,7 +103,7 @@ export const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 30, stiffness: 300 }}
-              className="fixed top-0 right-0 bottom-0 w-72 z-[70] bg-[#050505] border-l border-white/10 md:hidden flex flex-col"
+              className="fixed top-0 right-0 bottom-0 w-72 z-70 bg-[#050505] border-l border-white/10 md:hidden flex flex-col"
             >
               <div className="flex items-center justify-between px-5 h-16 border-b border-white/5">
                 <span className="font-mono text-[10px] font-black tracking-[0.5em] text-gray-500 uppercase">
@@ -138,6 +147,15 @@ export const Navbar = () => {
                 </div>
               </div>
               <div className="px-5 py-5 border-t border-white/5">
+                {!isEventsPage && (
+                  <Link
+                    href={resolveHref("#events")}
+                    onClick={() => setMobileOpen(false)}
+                    className="flex items-center justify-center w-full mb-4 px-4 py-3 border border-purple-500/50 bg-purple-500/20 text-purple-200 rounded-sm font-mono text-[10px] font-black tracking-[0.3em] uppercase"
+                  >
+                    Register Now
+                  </Link>
+                )}
                 <p className="text-center font-mono text-[8px] text-gray-500 tracking-[0.3em] uppercase font-bold">
                   K. K. WAGH INSTITUTE, NASHIK
                 </p>

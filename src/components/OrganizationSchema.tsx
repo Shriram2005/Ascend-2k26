@@ -9,6 +9,7 @@ export const getOrganizationSchema = () => {
     "@type": "Event",
     "@id": "https://ascend2k26.in",
     name: "ASCEND 2K26 — A Technical Symposium",
+    alternateName: ["ASCEND", "ASCEND 2026", "ASCEND KKW", "ASCEND Event"],
     description:
       "ASCEND 2K26 is a national-level technical symposium organized by the Department of MCA at K. K. Wagh Institute of Engineering Education and Research (KKWIEER), Nashik.",
     image: "https://ascend2k26.in/ascend_logo.jpeg",

@@ -35,8 +35,25 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
       <CyberBackground />
       <Navbar />
 
+      {event.registrationLink && (
+        <a
+          href={event.registrationLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed right-4 bottom-4 md:right-8 md:bottom-8 z-80 inline-flex items-center justify-center px-5 sm:px-7 py-3.5 font-mono text-[10px] tracking-[0.18em] uppercase font-black border border-black/20 rounded-sm transition-all hover:-translate-y-0.5 hover:shadow-xl"
+          style={{
+            background: event.accent,
+            color: "#000",
+            boxShadow: `0 0 20px ${event.accent}50`,
+          }}
+          aria-label={`Register for ${event.title}`}
+        >
+          Register Now
+        </a>
+      )}
+
       {/* Scanlines */}
-      <div className="fixed inset-0 pointer-events-none z-[60] opacity-[0.03] bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[size:100%_2px,3px_100%]" />
+      <div className="fixed inset-0 pointer-events-none z-60 opacity-[0.03] bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-size-[100%_2px,3px_100%]" />
 
       {/* ─── HERO ─── */}
       <section className="pt-28 md:pt-36 pb-16 md:pb-24 relative z-10">
@@ -49,7 +66,7 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
           >
             <Link
               href="/#events"
-              className="inline-flex items-center gap-2 text-gray-500 hover:text-white transition-colors font-mono text-[10px] tracking-widest uppercase font-black group"
+              className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors font-mono text-xs tracking-[0.2em] uppercase font-black group"
             >
               <ArrowLeft size={13} className="group-hover:-translate-x-1 transition-transform" />
               Back to Events
@@ -64,7 +81,7 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
             className="font-mono text-[10px] tracking-[0.6em] mb-4 uppercase font-black"
             style={{ color: event.accent }}
           >
-            // EVENT_{event.number} — ASCEND_2K26
+            {`EVENT_${event.number} | ASCEND_2K26`}
           </motion.p>
 
           {/* Title row */}
@@ -85,10 +102,10 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
                 )}
             </div>
             <div>
-              <h1 className="text-4xl sm:text-7xl md:text-[9rem] font-black uppercase tracking-tighter italic leading-none">
+              <h1 className="text-4xl sm:text-6xl md:text-[7rem] font-black uppercase tracking-tight italic leading-[0.95]">
                 {event.title}
               </h1>
-              <p className="font-mono text-[9px] tracking-[0.5em] text-gray-500 uppercase mt-2 font-black">
+              <p className="font-mono text-[10px] sm:text-xs tracking-[0.3em] text-gray-300 uppercase mt-3 font-black">
                 {event.subtitle}
               </p>
             </div>
@@ -103,19 +120,19 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
           >
             <div className="flex items-center gap-2 px-4 py-2 border border-white/10 bg-white/5">
               <Clock size={11} style={{ color: event.accent }} />
-              <span className="font-mono text-[9px] text-gray-300 tracking-widest uppercase font-black">
+              <span className="font-mono text-[10px] sm:text-xs text-gray-200 tracking-[0.2em] uppercase font-black">
                 {event.time}
               </span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 border border-white/10 bg-white/5">
               <Users size={11} style={{ color: event.accent }} />
-              <span className="font-mono text-[9px] text-gray-300 tracking-widest uppercase font-black">
+              <span className="font-mono text-[10px] sm:text-xs text-gray-200 tracking-[0.2em] uppercase font-black">
                 {event.teamSize}
               </span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 border border-white/10 bg-white/5">
               <span
-                className="font-mono text-[9px] tracking-widest uppercase font-black"
+                className="font-mono text-[10px] sm:text-xs tracking-[0.2em] uppercase font-black"
                 style={{ color: event.accent }}
               >
                 28 MARCH 2026 · KKWIEER, NASHIK
@@ -133,7 +150,7 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
             {event.tags.map((tag) => (
               <span
                 key={tag}
-                className="px-3 py-1 border border-white/5 text-[8px] font-mono text-gray-500 uppercase tracking-widest bg-black font-black italic"
+                className="px-3 py-1.5 border border-white/10 text-[10px] text-gray-200 uppercase tracking-[0.12em] bg-white/5 font-semibold rounded-sm"
               >
                 {tag}
               </span>
@@ -153,11 +170,11 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
           >
             <div className="flex items-center gap-3 mb-6">
               <BookOpen size={14} style={{ color: event.accent }} />
-              <h2 className="font-mono text-[9px] tracking-[0.4em] uppercase font-black text-gray-400">
+              <h2 className="font-mono text-[10px] tracking-[0.28em] uppercase font-black text-gray-300">
                 About This Event
               </h2>
             </div>
-            <p className="text-gray-300 font-bold text-lg leading-relaxed tracking-tight">
+            <p className="text-gray-200 font-semibold text-base sm:text-lg leading-relaxed tracking-normal">
               {event.description}
             </p>
 
@@ -166,9 +183,9 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
               {event.highlights.map((h) => (
                 <div
                   key={h.label}
-                  className="p-4 border border-white/5 bg-white/[0.02]"
+                  className="p-4 border border-white/5 bg-white/2"
                 >
-                  <p className="font-mono text-[8px] text-gray-500 tracking-[0.3em] uppercase mb-1 font-black">
+                  <p className="font-mono text-[10px] text-gray-300 tracking-[0.18em] uppercase mb-2 font-black">
                     {h.label}
                   </p>
                   <p
@@ -204,7 +221,7 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
                   >
                     {String(idx + 1).padStart(2, "0")}.
                   </span>
-                  <p className="text-gray-400 font-mono text-[11px] uppercase tracking-[0.2em] font-black leading-relaxed">
+                  <p className="text-gray-300 font-mono text-[11px] uppercase tracking-[0.2em] font-black leading-relaxed">
                     {rule}
                   </p>
                 </div>
@@ -216,7 +233,7 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
 
       {/* ─── REGISTRATION CTA ─── */}
       {event.registrationLink && (
-        <section className="py-16 md:py-24 relative z-10 bg-gradient-to-r from-white/[0.02] to-white/[0.01] border-y border-white/5">
+        <section className="py-16 md:py-24 relative z-10 bg-linear-to-r from-white/2 to-white/1 border-y border-white/5">
           <div className="max-w-5xl mx-auto px-4 md:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -224,27 +241,27 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <p className="font-mono text-[9px] tracking-[0.5em] uppercase font-black text-gray-400 mb-4">
+              <p className="font-mono text-[10px] tracking-[0.32em] uppercase font-black text-gray-300 mb-4">
                 Ready to Compete?
               </p>
               <h2 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tighter italic leading-none mb-8">
                 Register Now
               </h2>
-              <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+              <p className="text-gray-200 text-base sm:text-lg mb-10 max-w-2xl mx-auto">
                 Secure your spot and join the competition. Limited slots available!
               </p>
               <a
                 href={event.registrationLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-12 py-5 font-mono text-[11px] tracking-[0.4em] uppercase font-black hover:shadow-xl transition-all transform hover:scale-105"
+                className="inline-flex items-center justify-center px-8 sm:px-10 py-4 font-mono text-[10px] sm:text-xs tracking-[0.18em] uppercase font-black border border-black/20 rounded-sm hover:shadow-xl transition-all transform hover:-translate-y-0.5"
                 style={{
                   background: event.accent,
                   color: "#000",
-                  boxShadow: `0 0 30px ${event.accent}40`,
+                  boxShadow: `0 0 26px ${event.accent}45`,
                 }}
               >
-                Register for {event.title}
+                Register For This Event
               </a>
             </motion.div>
           </div>
@@ -280,14 +297,14 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.08 * idx }}
                 whileHover={{ y: -6 }}
-                className="relative p-6 md:p-8 border bg-white/[0.02] overflow-hidden"
+                className="relative p-6 md:p-8 border bg-white/2 overflow-hidden"
                 style={{
                   borderColor: idx === 0 ? `${event.accent}70` : "rgba(255,255,255,0.07)",
                 }}
               >
                 {idx === 0 && (
                   <div
-                    className="absolute -top-px left-0 right-0 h-[2px]"
+                    className="absolute -top-px left-0 right-0 h-0.5"
                     style={{ background: event.accent }}
                   />
                 )}
@@ -296,7 +313,7 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
                 >
                   {String(idx + 1)}
                 </div>
-                <p className="font-mono text-[8px] text-gray-500 tracking-[0.4em] uppercase mb-3 font-black">
+                <p className="font-mono text-[10px] text-gray-300 tracking-[0.2em] uppercase mb-3 font-black">
                   {prize.label}
                 </p>
                 <p
@@ -327,8 +344,12 @@ export const EventDetailPage = ({ event }: { event: EventData }) => {
                 href={event.registrationLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 font-mono text-[10px] tracking-[0.4em] uppercase font-black hover:shadow-lg transition-all"
-                style={{ background: event.accent, color: "#000" }}
+                className="px-8 py-4 font-mono text-[10px] tracking-[0.18em] uppercase font-black border border-black/20 rounded-sm hover:shadow-lg transition-all"
+                style={{
+                  background: event.accent,
+                  color: "#000",
+                  boxShadow: `0 0 16px ${event.accent}35`,
+                }}
               >
                 Register Now
               </a>
