@@ -79,13 +79,33 @@ export const Footer = () => (
               <p className="text-white tracking-widest italic">Dr. V. C. Bagal</p>
             </div>
             <div>
-              <p className="text-[9px] text-gray-500 font-mono mb-1 tracking-widest">COORDINATORS</p>
-              <p className="text-gray-300 tracking-widest italic text-[11px]">
-                Mr. Shahu Rasal &amp; Ms. Janhavi Lindait
-              </p>
-              <p className="text-gray-300 tracking-widest italic text-[11px] mt-1">
-                Dr. Vijay Dhawale &amp; Ms. Swarna Patil
-              </p>
+              <p className="text-[9px] text-gray-500 font-mono mb-1 tracking-widest">DEVELOPERS</p>
+              <div className="flex flex-col gap-1">
+                <a
+                  href="https://www.linkedin.com/in/shriram-mange"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 tracking-widest italic text-[11px] hover:text-purple-500 transition-colors inline-block"
+                >
+                  Shriram Mange
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/sahilgite2003"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 tracking-widest italic text-[11px] hover:text-purple-500 transition-colors inline-block"
+                >
+                  Sahil Gite
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/anushkashinde15"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 tracking-widest italic text-[11px] hover:text-purple-500 transition-colors inline-block"
+                >
+                  Anushka Shinde
+                </a>
+              </div>
             </div>
           </div>
         </div>
