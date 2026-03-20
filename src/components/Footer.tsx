@@ -79,33 +79,45 @@ export const Footer = () => (
               <p className="text-white tracking-widest italic">Dr. V. C. Bagal</p>
             </div>
             <div>
-              <p className="text-[9px] text-gray-500 font-mono mb-1 tracking-widest">DEVELOPERS</p>
-              <div className="flex flex-col gap-1">
-                <a
-                  href="https://www.linkedin.com/in/shriram-mange"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 tracking-widest italic text-[11px] hover:text-purple-500 transition-colors inline-block"
-                >
-                  Shriram Mange
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/sahilgite2003"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 tracking-widest italic text-[11px] hover:text-purple-500 transition-colors inline-block"
-                >
-                  Sahil Gite
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/anushkashinde15"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 tracking-widest italic text-[11px] hover:text-purple-500 transition-colors inline-block"
-                >
-                  Anushka Shinde
-                </a>
-              </div>
+              <h5 className="text-[9px] text-gray-500 font-mono mb-1 tracking-widest" id="developers-heading">DEVELOPERS</h5>
+              <ul className="flex flex-col gap-1" aria-labelledby="developers-heading">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/shriram-mange"
+                    target="_blank"
+                    rel="noopener noreferrer external"
+                    title="Shriram Mange - Developer LinkedIn Profile"
+                    aria-label="Visit Shriram Mange's LinkedIn profile"
+                    className="text-gray-300 tracking-widest italic text-[11px] hover:text-purple-500 transition-colors inline-block"
+                  >
+                    Shriram Mange
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/sahilgite2003"
+                    target="_blank"
+                    rel="noopener noreferrer external"
+                    title="Sahil Gite - Developer LinkedIn Profile"
+                    aria-label="Visit Sahil Gite's LinkedIn profile"
+                    className="text-gray-300 tracking-widest italic text-[11px] hover:text-purple-500 transition-colors inline-block"
+                  >
+                    Sahil Gite
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/anushkashinde15"
+                    target="_blank"
+                    rel="noopener noreferrer external"
+                    title="Anushka Shinde - Developer LinkedIn Profile"
+                    aria-label="Visit Anushka Shinde's LinkedIn profile"
+                    className="text-gray-300 tracking-widest italic text-[11px] hover:text-purple-500 transition-colors inline-block"
+                  >
+                    Anushka Shinde
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

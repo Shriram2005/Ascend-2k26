@@ -17,8 +17,13 @@ export const metadata: Metadata = {
   title: "ASCEND 2K26 | National Technical Symposium | MCA KKWIEER Nashik",
   description:
     "ASCEND 2K26 is a national-level technical symposium on March 28, 2026 at KKWIEER Nashik with 4 competitions: Mini Hackathon, Art Arena, BGMI Tournament, and Bowl'ed Out.",
-  authors: [{ name: "ASCEND 2K26 Team - MCA Department" }],
-  creator: "MCA Department, KKWIEER",
+  authors: [
+    { name: "Shriram Mange", url: "https://www.linkedin.com/in/shriram-mange" },
+    { name: "Sahil Gite", url: "https://www.linkedin.com/in/sahilgite2003" },
+    { name: "Anushka Shinde", url: "https://www.linkedin.com/in/anushkashinde15" },
+    { name: "ASCEND 2K26 Team - MCA Department" }
+  ],
+  creator: "Shriram Mange, Sahil Gite, Anushka Shinde",
   publisher: "K. K. Wagh Institute of Engineering Education and Research",
   keywords:
     "ascend,ascend 2026,ascend kkw,ascend 2k26,ascend event,ASCEND 2K26,national technical symposium,hackathon,art arena,poster making,BGMI tournament,esports,Bowl'ed Out,Nashik,KKWIEER,engineering event,MCA,college fest,technical competition,innovation,2026,Nashik events,student competition",
@@ -66,10 +71,46 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ASCEND 2K26",
+    "url": "https://ascend2k26.in",
+    "description": "National-level technical symposium at KKWIEER Nashik.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "K. K. Wagh Institute of Engineering Education & Research"
+    },
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Shriram Mange",
+        "url": "https://www.linkedin.com/in/shriram-mange",
+        "jobTitle": "Lead Developer"
+      },
+      {
+        "@type": "Person",
+        "name": "Sahil Gite",
+        "url": "https://www.linkedin.com/in/sahilgite2003",
+        "jobTitle": "Developer"
+      },
+      {
+        "@type": "Person",
+        "name": "Anushka Shinde",
+        "url": "https://www.linkedin.com/in/anushkashinde15",
+        "jobTitle": "Developer"
+      }
+    ]
+  };
+
   return (
     <html lang="en">
       <head>
         <meta name="theme-color" content="#050505" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

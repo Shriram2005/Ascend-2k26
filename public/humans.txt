@@ -1,0 +1,17 @@
+/* TEAM */
+Lead Developer: Shriram Mange
+Contact: https://www.linkedin.com/in/shriram-mange
+Role: Lead Full Stack Developer
+
+Developer: Sahil Gite
+Contact: https://www.linkedin.com/in/sahilgite2003
+Role: UI/UX & Developer
+
+Developer: Anushka Shinde
+Contact: https://www.linkedin.com/in/anushkashinde15
+Role: Frontend Developer
+
+/* SITE */
+Standards: HTML5, CSS3, ES6
+Components: Next.js, React, Tailwind CSS
+Software: Visual Studio Code
