@@ -38,8 +38,9 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+  metadataBase: new URL("https://ascend2k26.in"),
   alternates: {
-    canonical: "https://ascend2k26.in",
+    canonical: "/",
   },
   openGraph: {
     title: "ASCEND 2K26 | It's Time to Rise — National Technical Symposium",
