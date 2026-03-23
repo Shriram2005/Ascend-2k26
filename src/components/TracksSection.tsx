@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { motion, useMotionValue } from "framer-motion";
 import { Palette, Cpu, Gamepad2, Trophy, ArrowRight } from "lucide-react";
 
@@ -18,9 +19,11 @@ interface EventCardProps {
 const EventCard = ({ title, subtitle, accent, icon, desc, tags, href }: EventCardProps) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
+  const router = useRouter();
 
   return (
     <motion.div
+      onClick={() => router.push(href)}
       onMouseMove={(e) => {
         const rect = e.currentTarget.getBoundingClientRect();
         mouseX.set(e.clientX - rect.left);
@@ -30,7 +33,7 @@ const EventCard = ({ title, subtitle, accent, icon, desc, tags, href }: EventCar
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       whileHover={{ y: -10 }}
-      className="group relative min-h-[380px] sm:min-h-[420px] bg-[#050505] border border-white/5 p-6 sm:p-8 md:p-10 overflow-hidden backdrop-blur-sm text-left transition-colors hover:border-white/10 flex flex-col"
+      className="group relative min-h-[380px] sm:min-h-[420px] bg-[#050505] border border-white/5 p-6 sm:p-8 md:p-10 overflow-hidden backdrop-blur-sm text-left transition-colors hover:border-white/10 flex flex-col cursor-pointer"
     >
       <div className="absolute top-0 left-0 w-8 h-8 border-t border-l border-white/10" />
       <div className="absolute bottom-0 right-0 w-8 h-8 border-b border-r border-white/10" />
@@ -77,8 +80,7 @@ const EventCard = ({ title, subtitle, accent, icon, desc, tags, href }: EventCar
               </span>
             ))}
           </div>
-          <Link
-            href={href}
+          <div
             className="inline-flex items-center gap-2 font-mono text-[10px] tracking-[0.3em] uppercase font-black transition-colors group/link mt-1"
             style={{ color: accent }}
           >
@@ -87,7 +89,7 @@ const EventCard = ({ title, subtitle, accent, icon, desc, tags, href }: EventCar
               size={12}
               className="group-hover/link:translate-x-1 transition-transform"
             />
-          </Link>
+          </div>
         </div>
       </div>
     </motion.div>
