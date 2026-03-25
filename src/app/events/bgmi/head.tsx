@@ -29,7 +29,7 @@ export default function Head() {
     },
     "offers": {
       "@type": "Offer",
-      "price": "200",
+      "price": "80",
       "priceCurrency": "INR",
     },
   };

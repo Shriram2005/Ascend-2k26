@@ -5,11 +5,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Art Arena — ASCEND 2K26 | Creative Poster Design Competition",
   description:
-    "Art Arena at ASCEND 2K26: Solo poster-making design competition. ₹50 entry fee. ₹1000 prize. Create original designs without AI tools. Showcase your creativity & design thinking on March 28 at KKWIEER Nashik.",
+    "Art Arena at ASCEND 2K26: Solo poster-making design competition. ₹40 entry fee. ₹1000 prize. Create original designs without AI tools. Showcase your creativity & design thinking on March 28 at KKWIEER Nashik.",
   keywords: "art arena,poster making,design competition,creative design,poster design,ASCEND 2K26,design competition,creativity,student art event",
   openGraph: {
     title: "Art Arena — ASCEND 2K26 | Creative Poster Design Event",
-    description: "Solo poster design competition at ASCEND 2K26. ₹50 entry, ₹1000 prize. Showcase your creativity!",
+    description: "Solo poster design competition at ASCEND 2K26. ₹40 entry, ₹1000 prize. Showcase your creativity!",
   },
   twitter: {
     title: "Art Arena — ASCEND 2K26",
@@ -31,7 +31,7 @@ const event: EventData = {
   highlights: [
     { label: "Duration", value: "1 Hr" },
     { label: "Team Size", value: "Solo" },
-    { label: "Entry Fee", value: "₹50" },
+    { label: "Entry Fee", value: "₹40" },
     { label: "Prize", value: "₹1000" },
   ],
   prizes: [

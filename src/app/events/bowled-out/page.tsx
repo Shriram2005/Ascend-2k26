@@ -5,15 +5,15 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Bowled-Out — ASCEND 2K26 | Cricket Accuracy Team Competition",
   description:
-    "Bowled-Out at ASCEND 2K26: Unique cricket tournament where 6-player teams hit stumps for precision. ₹150/team entry. Win ₹1500 prize. 28 March 2026 at KKWIEER Nashik. Test your cricket accuracy!",
+    "Bowled-Out at ASCEND 2K26: Unique cricket tournament where 6-player teams hit stumps for precision. ₹30/person entry. Win ₹1500 prize. 28 March 2026 at KKWIEER Nashik. Test your cricket accuracy!",
   keywords: "bowl'ed out,cricket tournament,team sports,accuracy challenge,cricket game,ASCEND 2K26,sports competition,Nashik,student tournament",
   openGraph: {
     title: "Bowled-Out — ASCEND 2K26 | Cricket Team Tournament",
-    description: "6-player cricket accuracy tournament at ASCEND 2K26. ₹150 entry, ₹1500 prize, 4 hours duration.",
+    description: "6-player cricket accuracy tournament at ASCEND 2K26. ₹30/person entry, ₹1500 prize, 4 hours duration.",
   },
   twitter: {
     title: "Bowled-Out — ASCEND 2K26",
-    description: "Cricket accuracy tournament at ASCEND 2K26. 6-player teams, ₹150 entry. March 28, 2026. Register now!",
+    description: "Cricket accuracy tournament at ASCEND 2K26. 6-player teams, ₹30/person entry. March 28, 2026. Register now!",
   },
 }
 
@@ -31,7 +31,7 @@ const event: EventData = {
   highlights: [
     { label: "Duration", value: "4 Hrs" },
     { label: "Team Size", value: "6" },
-    { label: "Entry Fee", value: "₹150 / Team" },
+    { label: "Entry Fee", value: "₹30 / Person" },
     { label: "Prize", value: "₹1500" },
   ],
   prizes: [

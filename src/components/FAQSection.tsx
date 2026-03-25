@@ -6,7 +6,7 @@ import { HelpCircle } from "lucide-react";
 const faqs = [
   {
     q: "Is there a registration fee?",
-    a: "Yes, event-wise fees apply: Mini Hackathon ₹200/team, Art Arena ₹50, BGMI ₹200/squad, and Bowl'ed Out ₹150/team.",
+    a: "Yes, event-wise fees apply: Mini Hackathon ₹200/team, Art Arena ₹40, BGMI ₹80/squad, and Bowl'ed Out ₹30/person.",
   },
   {
     q: "What is the team size?",

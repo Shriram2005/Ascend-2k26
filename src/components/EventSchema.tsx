@@ -50,7 +50,7 @@ export const getEventSchema = (event: EventData, eventSlug: string) => {
     offers: {
       "@type": "Offer",
       url: eventUrl,
-      price: event.highlights.find((h) => h.label === "Entry Fee")?.value.replace("₹", "").split("/")[0] || "50",
+      price: event.highlights.find((h) => h.label === "Entry Fee")?.value.replace("₹", "").split("/")[0] || "30",
       priceCurrency: "INR",
       availability: "https://schema.org/InStock",
       validFrom: `2026-01-01T00:00:00+05:30`,

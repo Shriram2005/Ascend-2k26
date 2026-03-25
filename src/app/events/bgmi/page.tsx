@@ -5,11 +5,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "BGMI Tournament — ASCEND 2K26 | Mobile Esports Battle Royale",
   description:
-    "BGMI Squad Tournament at ASCEND 2K26: Competitive Battle Royale esports on March 28. 4-person squads, ₹200/team entry. Win trophy & certificate. Strategy, teamwork & precision gaming.",
+    "BGMI Squad Tournament at ASCEND 2K26: Competitive Battle Royale esports on March 28. 4-person squads, ₹80/team entry. Win trophy & certificate. Strategy, teamwork & precision gaming.",
   keywords: "BGMI tournament,esports,battle royale,gaming competition,mobile gaming,squad tournament,ASCEND 2K26,Nashik esports,competitive gaming",
   openGraph: {
     title: "BGMI Tournament — ASCEND 2K26 | Esports Squad Battle",
-    description: "Competitive BGMI squad tournament at ASCEND 2K26. 4-player teams, ₹200 entry, trophy & prizes.",
+    description: "Competitive BGMI squad tournament at ASCEND 2K26. 4-player teams, ₹80 entry, trophy & prizes.",
   },
   twitter: {
     title: "BGMI Tournament — ASCEND 2K26",
@@ -31,7 +31,7 @@ const event: EventData = {
   highlights: [
     { label: "Duration", value: "2.5 Hrs" },
     { label: "Squad Size", value: "4 Players" },
-    { label: "Entry Fee", value: "₹200 / Team" },
+    { label: "Entry Fee", value: "₹80 / Team" },
     { label: "Platform", value: "Mobile" },
   ],
   prizes: [

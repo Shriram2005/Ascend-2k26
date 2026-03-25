@@ -6,7 +6,7 @@ const stats = [
   { label: "TOTAL_EVENTS", value: "4", color: "text-purple-400" },
   { label: "DURATION", value: "1 Day", color: "text-cyan-400" },
   { label: "PARTICIPANTS", value: "200+", color: "text-green-500" },
-  { label: "STARTING_FEE", value: "₹50", color: "text-yellow-400" },
+  { label: "STARTING_FEE", value: "₹30", color: "text-yellow-400" },
 ];
 
 export const StatsBar = () => (

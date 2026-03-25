@@ -71,7 +71,7 @@ export const getOrganizationSchema = () => {
     offers: {
       "@type": "AggregateOffer",
       priceCurrency: "INR",
-      lowPrice: "50",
+      lowPrice: "30",
       highPrice: "200",
     },
     aggregateRating: {
