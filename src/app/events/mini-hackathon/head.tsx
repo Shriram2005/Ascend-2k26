@@ -5,7 +5,7 @@ export default function Head() {
     "@context": "https://schema.org",
     "@type": "Event",
     "name": "Mini Hackathon — ASCEND 2K26",
-    "description": "The Mini Hackathon is a project-based competition where participants present a pre-developed solution for a given problem statement.",
+    "description": "The Mini Hackathon is a project-based competition where participants build a solution in 24 hours. The problem statement will be provided exactly 24 hours prior to the event. The winner gets exclusive internship opportunities.",
     "startDate": "2026-03-28T14:00:00+05:30",
     "endDate": "2026-03-28T17:00:00+05:30",
     "eventStatus": "EventScheduled",
